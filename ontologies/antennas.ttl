@@ -1,0 +1,173 @@
+@prefix : <http://ontologies.metaphacts.com/antennas/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:NodeShape;
+  sh:property :0a4c25bb-ea9d-45c5-9040-299bee8fd695, :50ea5fd5-81fb-4930-bd93-4fd0308bd702,
+    :7b0b6595-b293-40c2-88dd-faca0382dc3e, :8570b5fc-1629-4881-8fbb-75aeda3c458a, :9a7ff516-9cd9-4516-8972-98d451da9b26,
+    :ad9dcdd1-db34-4563-9373-3953540a3902, :f8362985-2a78-4367-8657-65d0f44993b6;
+  sh:targetClass :MobileAntenna .
+
+[] a sh:NodeShape;
+  sh:property :39842fa6-87b0-496b-8ef4-4f43fc94124f, :53023700-985b-4af1-826b-2514220d75c2,
+    :8a315438-3677-4c08-92a1-05f9cf52135e, :aaa6fa31-9fe9-4aee-823e-3f8573fc219b, :aeb67154-4d1f-417d-8cdb-58d29aaf8d54,
+    :ef68eedf-090d-4f68-b449-6076da628789;
+  sh:targetClass :Point .
+
+<http://ontologies.metaphacts.com/antennas> a owl:Ontology;
+  dcterms:title "Antennas";
+  vaem:namespace <http://ontologies.metaphacts.com/antennas/>;
+  rdfs:label "Antennas";
+  owl:imports <http://purl.org/toco/> .
+
+:0a4c25bb-ea9d-45c5-9040-299bee8fd695 a sh:PropertyShape;
+  sh:datatype xsd:string;
+  sh:minCount 1;
+  sh:path :technology .
+
+:39842fa6-87b0-496b-8ef4-4f43fc94124f a sh:PropertyShape;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path :longitude .
+
+:50ea5fd5-81fb-4930-bd93-4fd0308bd702 a sh:PropertyShape;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:path :powercode .
+
+:53023700-985b-4af1-826b-2514220d75c2 a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top/Building>;
+  sh:maxCount 1;
+  sh:path :pointIsOnBuilding .
+
+:7b0b6595-b293-40c2-88dd-faca0382dc3e a sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path :antennaIsOwnedBy .
+
+:8570b5fc-1629-4881-8fbb-75aeda3c458a a sh:PropertyShape;
+  sh:class :Point;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path :antennaHasCoordinates .
+
+:8a315438-3677-4c08-92a1-05f9cf52135e a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#Street>;
+  sh:maxCount 1;
+  sh:path :pointIsInStreet .
+
+:9a7ff516-9cd9-4516-8972-98d451da9b26 a sh:PropertyShape;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path :antennaId .
+
+:MobileAntenna a owl:Class;
+  rdfs:comment "A mobile antenna is a device designed to transmit and receive signals wirelessly, typically used for communication purposes, while an access point is a networking device that provides wireless connectivity to devices within its range, therefore a mobile antenna can be considered as a type of access point when it enables wireless connectivity for mobile devices."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "MobileAntenna";
+  rdfs:subClassOf <http://purl.org/toco/AccessPoint>, skos:Concept .
+
+:Point a owl:Class;
+  rdfs:comment "A geographic point refers to a specific location on the Earth's surface, defined by its latitude and longitude coordinates."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Point" .
+
+:aaa6fa31-9fe9-4aee-823e-3f8573fc219b a sh:PropertyShape;
+  sh:datatype xsd:double;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path :latitude .
+
+:ad9dcdd1-db34-4563-9373-3953540a3902 a sh:PropertyShape;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:path :cellType .
+
+:adaptive a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines whether a mobile antenna is adaptive, indicating its capacity to dynamically adjust its parameters or characteristics in response to changing environmental conditions or communication requirements."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "isAdaptive" .
+
+:aeb67154-4d1f-417d-8cdb-58d29aaf8d54 a sh:PropertyShape;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path :coordinateSystem .
+
+:antennaHasCoordinates a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "antennaHasCoordinates" .
+
+:antennaId a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines each antenna uniquely."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Antenna ID" .
+
+:antennaIsOwnedBy a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "antennaIsOwnedBy" .
+
+:cellType a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines the form format of the cell in use by the antenna.";
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Cell Type" .
+
+:coordinateSystem a owl:DatatypeProperty;
+  rdfs:comment "A coordinate system is a reference framework that defines how geographic points are represented on a map or the Earth's surface. The most commonly used coordinate system is the geographic coordinate system, which uses latitude and longitude as coordinates to identify specific locations worldwide. It enables accurate positioning and navigation on the Earth."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Coordinate System" .
+
+:ef68eedf-090d-4f68-b449-6076da628789 a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#City>;
+  sh:maxCount 1;
+  sh:path :pointIsInCity .
+
+:f8362985-2a78-4367-8657-65d0f44993b6 a sh:PropertyShape;
+  sh:datatype xsd:boolean;
+  sh:maxCount 1;
+  sh:path :adaptive .
+
+:isOwnerOf a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "isOwnerOf" .
+
+:latitude a owl:DatatypeProperty;
+  rdfs:comment "Latitude is a geographic attribute that denotes the north-south position of a point on the Earth's surface, measured in degrees, ranging from -90° (south) to +90° (north). It is also an essential component of the coordinate system used to determine precise locations on the Earth."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Latitude" .
+
+:longitude a owl:DatatypeProperty;
+  rdfs:comment "Longitude is a geographic attribute that specifies the east-west position of a point on the Earth's surface, measured in degrees, ranging from -180° (west) to +180° (east). It is part of the coordinate system used to determine precise locations on the Earth."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Longitude" .
+
+:pointIsInCity a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "pointIsInCity" .
+
+:pointIsInStreet a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "pointIsInStreet" .
+
+:pointIsOnBuilding a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "pointIsOnBuilding" .
+
+:powercode a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines the radiation intensity of an antenna, where it is known."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Powercode" .
+
+:technology a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines the mobile communication technology the antenna is used for."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Technology" .
