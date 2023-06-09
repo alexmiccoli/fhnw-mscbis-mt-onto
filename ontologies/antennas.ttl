@@ -24,7 +24,7 @@
   dcterms:title "Antennas";
   vaem:namespace <http://ontologies.metaphacts.com/antennas/>;
   rdfs:label "Antennas";
-  owl:imports <http://purl.org/toco/> .
+  owl:imports <http://ikm-group.ch/archiMEO/top>, <http://purl.org/toco/>, <http://www.w3.org/ns/org#> .
 
 :0a4c25bb-ea9d-45c5-9040-299bee8fd695 a sh:PropertyShape;
   sh:datatype xsd:string;
