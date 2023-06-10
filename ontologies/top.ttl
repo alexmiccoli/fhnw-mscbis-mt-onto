@@ -1,0 +1,260 @@
+@prefix : <http://ikm-group.ch/archiMEO/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:NodeShape;
+  sh:property <http://ikm-group.ch/archiMEO/top/c61b30aa-aaea-4fb1-b36d-29b7c63ded1f>,
+    <http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe>;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top/Building> .
+
+:04f81e53259e61bd1acc43a1972c05e3 a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#Country>;
+  sh:path <http://ikm-group.ch/archiMEO/top#partOfCountryBelongsToCountry> .
+
+:3a9344a6e3a5477ab1d81984e6c018a1 a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#countryIsLocatedInContinent> .
+
+:58c8f2a30268f0054a0fac3f7e17135e a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#PartOfCountry>;
+  sh:path <http://ikm-group.ch/archiMEO/top#partOfCountryIsPartOfCountry> .
+
+:8d99703df4d387a127e2d41eed138835 a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#LogicalLocation>;
+  sh:path <http://ikm-group.ch/archiMEO/top#logicalLocationIsConnectedToLogicalLocation> .
+
+:8e43ba3ae369ba5853103e9c5da75f2d a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#cityHasPostalCode> .
+
+:9893e5aa5cf204db426958835f0ca7c2 a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#PartOfCountry>;
+  sh:path <http://ikm-group.ch/archiMEO/top#countryConsistsOfPartOfCountry> .
+
+:b1d99de4e67925e56211e10084c8b633 a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#PartOfCountry>;
+  sh:path <http://ikm-group.ch/archiMEO/top#partOfCountryConsistsOfPartOfCountry> .
+
+:ba4cb2e8b9e94351e1354302e79e42c2 a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#countryHasTypeOfState> .
+
+:cc462fd0109d8138c3cb738fcfc088c5 a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#cityIsLocatedInPartOfCountry> .
+
+:d01a60f07688feef0e731fce57616550 a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#cityIsLocatedInCountry> .
+
+:d0e3156eda80684d2cbeb60c5f55252b a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#PhysicalLocation>;
+  sh:path <http://ikm-group.ch/archiMEO/top#physicalLocationIsPartOfPhysicalLocation> .
+
+:d3fd97c2f9ae20cc70cc8426d3655391 a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#partOfCountryHasTypeOfPartOfCountry> .
+
+:f3cbcc50cb9957f71131295662529f54 a sh:PropertyShape;
+  sh:path <http://ikm-group.ch/archiMEO/top#streetBelongsToCity> .
+
+:top a owl:Ontology;
+  <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-sa/3.0/>,
+    "This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License."@en;
+  dc:contributor "Barbara Thönssen", "Knut Hinkelmann";
+  dc:creator "Andreas Martin", "Roman Brun";
+  dc:description "The Top Level Ontology."@en;
+  dc:issued "2010-01-01"^^xsd:date;
+  dc:modified "2013-05-24"^^xsd:date;
+  dc:publisher <http://de.dbpedia.org/resource/Fachhochschule_Nordwestschweiz>, <http://www.fhnw.ch/business>,
+    "University of Applied Sciences Northwestern Switzerland FHNW"@en;
+  dc:rights "Copyright 2012 FHNW";
+  dc:title "The Top Level Ontology"@en;
+  rdfs:comment "Version 1.0: Initial import"@en;
+  owl:versionInfo 1.0 .
+
+<http://ikm-group.ch/archiMEO/top#ActOfGod> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#ForceMajeureEvent> .
+
+<http://ikm-group.ch/archiMEO/top#CalendarElement> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "CalendarElement";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Time> .
+
+<http://ikm-group.ch/archiMEO/top#City> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#CityShape> a sh:NodeShape;
+  sh:property :8e43ba3ae369ba5853103e9c5da75f2d, :cc462fd0109d8138c3cb738fcfc088c5,
+    :d01a60f07688feef0e731fce57616550;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top#City> .
+
+<http://ikm-group.ch/archiMEO/top#Continent> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#ContinentIncludesCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#Country> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#CountryShape> a sh:NodeShape;
+  sh:property :3a9344a6e3a5477ab1d81984e6c018a1, :9893e5aa5cf204db426958835f0ca7c2,
+    :ba4cb2e8b9e94351e1354302e79e42c2;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top#Country> .
+
+<http://ikm-group.ch/archiMEO/top#Event> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#TopLevelElements> .
+
+<http://ikm-group.ch/archiMEO/top#ForceMajeureEvent> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Event> .
+
+<http://ikm-group.ch/archiMEO/top#Location> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "Location";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#TopLevelElements> .
+
+<http://ikm-group.ch/archiMEO/top#LogicalLocation> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "LogicalLocation";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Location> .
+
+<http://ikm-group.ch/archiMEO/top#LogicalLocationShape> a sh:NodeShape;
+  sh:property :8d99703df4d387a127e2d41eed138835;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top#LogicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#MenMadeEvent> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#ForceMajeureEvent> .
+
+<http://ikm-group.ch/archiMEO/top#PartOfCountry> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#PartOfCountryBelongsToCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#PartOfCountryShape> a sh:NodeShape;
+  sh:property :04f81e53259e61bd1acc43a1972c05e3, :58c8f2a30268f0054a0fac3f7e17135e,
+    :b1d99de4e67925e56211e10084c8b633, :d3fd97c2f9ae20cc70cc8426d3655391;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top#PartOfCountry> .
+
+<http://ikm-group.ch/archiMEO/top#PhysicalLocation> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "PhysicalLocation";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Location> .
+
+<http://ikm-group.ch/archiMEO/top#PhysicalLocationShape> a sh:NodeShape;
+  sh:property :d0e3156eda80684d2cbeb60c5f55252b;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#Street> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top#StreetShape> a sh:NodeShape;
+  sh:property :f3cbcc50cb9957f71131295662529f54;
+  sh:targetClass <http://ikm-group.ch/archiMEO/top#Street> .
+
+<http://ikm-group.ch/archiMEO/top#Time> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "Time";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#TopLevelElements> .
+
+<http://ikm-group.ch/archiMEO/top#TimeElement> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "TimeElement";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Time> .
+
+<http://ikm-group.ch/archiMEO/top#TimeInterval> a owl:Class;
+  rdfs:comment "an interval of time specified as two TIME POINTS and bounds on the distance between the two time points";
+  rdfs:isDefinedBy :top;
+  rdfs:label "TimeInterval";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Time> .
+
+<http://ikm-group.ch/archiMEO/top#TimePoint> a owl:Class;
+  rdfs:comment "a particular, instantaneous point in time";
+  rdfs:isDefinedBy :top;
+  rdfs:label "TimePoint";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Time> .
+
+<http://ikm-group.ch/archiMEO/top#TimeZone> a owl:Class;
+  rdfs:isDefinedBy :top;
+  rdfs:label "TimeZone";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#Time> .
+
+<http://ikm-group.ch/archiMEO/top#TopLevelElements> a owl:Class;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#cityHasPostalCode> a owl:DatatypeProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#cityIsLocatedInCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#cityIsLocatedInPartOfCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#countryConsistsOfPartOfCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#countryHasTypeOfState> a owl:DatatypeProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#countryIsLocatedInContinent> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#logicalLocationIsConnectedToLogicalLocation> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top;
+  rdfs:label "logicalLocationIsConnectedToLogicalLocation" .
+
+<http://ikm-group.ch/archiMEO/top#partOfCountryBelongsToCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#partOfCountryConsistsOfPartOfCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#partOfCountryHasTypeOfPartOfCountry> a owl:DatatypeProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#partOfCountryIsPartOfCountry> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#physicalLocationIsPartOfPhysicalLocation> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#streetBelongsToCity> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top#swissCityBelongsToSwissCanton> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top .
+
+<http://ikm-group.ch/archiMEO/top/Building> a owl:Class;
+  rdfs:comment "A individual building in a street."@en;
+  rdfs:isDefinedBy :top;
+  rdfs:label "Building";
+  rdfs:subClassOf <http://ikm-group.ch/archiMEO/top#PhysicalLocation> .
+
+<http://ikm-group.ch/archiMEO/top/buildingIsLocatedInStreet> a owl:ObjectProperty;
+  rdfs:isDefinedBy :top;
+  rdfs:label "buildingIsLocatedInStreet" .
+
+<http://ikm-group.ch/archiMEO/top/c61b30aa-aaea-4fb1-b36d-29b7c63ded1f> a sh:PropertyShape;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:path <http://ikm-group.ch/archiMEO/top/number> .
+
+<http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe> a sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#Street>;
+  sh:path <http://ikm-group.ch/archiMEO/top/buildingIsLocatedInStreet> .
+
+<http://ikm-group.ch/archiMEO/top/number> a owl:DatatypeProperty;
+  rdfs:comment "Indicates the house number of a building in a street."@en;
+  rdfs:isDefinedBy :top;
+  rdfs:label "buildingHasNumber"@en .
