@@ -136,10 +136,6 @@
   sh:maxCount 1;
   sh:path :adaptive .
 
-:isOwnerOf a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "isOwnerOf" .
-
 :latitude a owl:DatatypeProperty;
   rdfs:comment "Latitude is a geographic attribute that denotes the north-south position of a point on the Earth's surface, measured in degrees, ranging from -90° (south) to +90° (north). It is also an essential component of the coordinate system used to determine precise locations on the Earth."@en;
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
