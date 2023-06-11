@@ -93,7 +93,7 @@
   sh:path :cellType .
 
 :adaptive a owl:DatatypeProperty;
-  rdfs:comment "This attribute defines whether a mobile antenna is adaptive, indicating its capacity to dynamically adjust its parameters or characteristics in response to changing environmental conditions or communication requirements."@en;
+  rdfs:comment "The adaptivity attribute defines whether a mobile antenna is adaptive, indicating its capacity to dynamically adjust its parameters or characteristics in response to changing environmental conditions or communication requirements."@en;
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
   rdfs:label "isAdaptive" .
 
