@@ -1,9 +1,30 @@
 
+
 # Master's Thesis Data Repository
 
 **Welcome to my Master's thesis data repository!**
 
 This repository contains data and accompanying resources for my Master's thesis.
+
+## Thesis Information
+
+**Title**
+A domain-specific visual approach to semantically describe shared datasets in business ecosystems
+
+**University**
+[University of Applied Sciences and Arts Northwestern Switzerland FHNW](https://www.fhnw.ch/en)
+
+**Curriculum**
+[Master of Science (MSc) in Business Information Systems (BIS) FHNW](https://www.fhnw.ch/en/degree-programmes/business/msc-bis)
+
+**Date of Submission**
+June 21st, 2023
+
+**Author**
+Alexandre Miccoli, 16-658-288
+
+**Supervisor**
+Dr. Emanuele Laurenzi 
 
 ## Contents by Folder
 
