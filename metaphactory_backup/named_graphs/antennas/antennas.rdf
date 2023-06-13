@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="https://www.w3.org/TR/vocab-org/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:wd="http://www.wikidata.org/entity/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:sp="http://spinrdf.org/sp#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/MobileAntenna">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaId">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technology">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercode">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/adaptive">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/Point">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/longitude">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsInStreet">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/latitude">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/coordinateSystem">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsInCity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaHasCoordinates">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaIsOwnedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsOnBuilding">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/1a78eabb-7d3f-4990-a17e-f2647e5475c1">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/3e0e6f4e-2615-45e8-84c2-e890210c6981">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/4d63aa8b-6443-4e54-9f3b-f3baf679f2fe">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/87c3bf42-c8f8-4273-a976-b12f69e3b247">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/763eba03-c2d1-4b4f-9769-2c17cf416124">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercodeParamProvidedByOrg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/identifierParamProvidedByOrg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellTypeParamProvidedByOrg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/isAdaptiveParamProvidedByOrg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/locationParamProvidedByOrg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technologyParamProvidedByOrg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d3318-44168eec0746df4567710644807371c">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d3318-67c0ad820e40a85a7f7d0c5e727e6416">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/source">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/MobileAntenna">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/AccessPoint"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas">
+	<title xmlns="http://purl.org/dc/terms/">Antennas</title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/MobileAntenna">
+	<rdfs:comment xml:lang="en">A mobile antenna is a device designed to transmit and receive signals wirelessly, typically used for communication purposes, while an access point is a networking device that provides wireless connectivity to devices within its range, therefore a mobile antenna can be considered as a type of access point when it enables wireless connectivity for mobile devices.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaId">
+	<rdfs:comment xml:lang="en">This attribute defines each antenna uniquely.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technology">
+	<rdfs:comment xml:lang="en">This attribute defines the mobile communication technology the antenna is used for.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercode">
+	<rdfs:comment xml:lang="en">This attribute defines the radiation intensity of an antenna, where it is known.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellType">
+	<rdfs:comment>This attribute defines the form format of the cell in use by the antenna.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/adaptive">
+	<rdfs:comment xml:lang="en">The adaptivity attribute defines whether a mobile antenna is adaptive, indicating its capacity to dynamically adjust its parameters or characteristics in response to changing environmental conditions or communication requirements.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/Point">
+	<rdfs:comment xml:lang="en">A geographic point refers to a specific location on the Earth's surface, defined by its latitude and longitude coordinates.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/longitude">
+	<rdfs:comment xml:lang="en">Longitude is a geographic attribute that specifies the east-west position of a point on the Earth's surface, measured in degrees, ranging from -180° (west) to +180° (east). It is part of the coordinate system used to determine precise locations on the Earth.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/latitude">
+	<rdfs:comment xml:lang="en">Latitude is a geographic attribute that denotes the north-south position of a point on the Earth's surface, measured in degrees, ranging from -90° (south) to +90° (north). It is also an essential component of the coordinate system used to determine precise locations on the Earth.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/coordinateSystem">
+	<rdfs:comment xml:lang="en">A coordinate system is a reference framework that defines how geographic points are represented on a map or the Earth's surface. The most commonly used coordinate system is the geographic coordinate system, which uses latitude and longitude as coordinates to identify specific locations worldwide. It enables accurate positioning and navigation on the Earth.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/MobileAntenna">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaId">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technology">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercode">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellType">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/adaptive">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/Point">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/longitude">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsInStreet">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/latitude">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/coordinateSystem">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsInCity">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaHasCoordinates">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaIsOwnedBy">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsOnBuilding">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercodeParamProvidedByOrg">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/identifierParamProvidedByOrg">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellTypeParamProvidedByOrg">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/isAdaptiveParamProvidedByOrg">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/locationParamProvidedByOrg">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technologyParamProvidedByOrg">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/source">
+	<rdfs:isDefinedBy rdf:resource="http://ontologies.metaphacts.com/antennas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas">
+	<rdfs:label>Antennas</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/MobileAntenna">
+	<rdfs:label>MobileAntenna</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaId">
+	<rdfs:label>Antenna ID</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technology">
+	<rdfs:label>Technology</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercode">
+	<rdfs:label>Powercode</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellType">
+	<rdfs:label>Cell Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/adaptive">
+	<rdfs:label>isAdaptive</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/Point">
+	<rdfs:label>Point</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/longitude">
+	<rdfs:label>Longitude</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsInStreet">
+	<rdfs:label>pointIsInStreet</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/latitude">
+	<rdfs:label>Latitude</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/coordinateSystem">
+	<rdfs:label>Coordinate System</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsInCity">
+	<rdfs:label>pointIsInCity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaHasCoordinates">
+	<rdfs:label>antennaHasCoordinates</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/antennaIsOwnedBy">
+	<rdfs:label>antennaIsOwnedBy</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/pointIsOnBuilding">
+	<rdfs:label>pointIsOnBuilding</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/powercodeParamProvidedByOrg">
+	<rdfs:label>PowercodeParamProvidedByOrg</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/identifierParamProvidedByOrg">
+	<rdfs:label>IdentifierParamProvidedByOrg</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/cellTypeParamProvidedByOrg">
+	<rdfs:label>CellTypeParamProvidedByOrg</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/isAdaptiveParamProvidedByOrg">
+	<rdfs:label>isAdaptiveParamProvidedByOrg</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/locationParamProvidedByOrg">
+	<rdfs:label>LocationParamProvidedByOrg</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/technologyParamProvidedByOrg">
+	<rdfs:label>TechnologyParamProvidedByOrg</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/source">
+	<rdfs:label>Source</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas">
+	<namespace xmlns="http://www.linkedmodel.org/1.2/schema/vaem#" rdf:resource="http://ontologies.metaphacts.com/antennas/"/>
+	<owl:imports rdf:resource="http://purl.org/toco/"/>
+	<owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+	<owl:imports rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d3318-44168eec0746df4567710644807371c">
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/1a78eabb-7d3f-4990-a17e-f2647e5475c1"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/3e0e6f4e-2615-45e8-84c2-e890210c6981"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/4d63aa8b-6443-4e54-9f3b-f3baf679f2fe"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/87c3bf42-c8f8-4273-a976-b12f69e3b247"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d3318-67c0ad820e40a85a7f7d0c5e727e6416">
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/763eba03-c2d1-4b4f-9769-2c17cf416124"/>
+	<sh:property rdf:resource="http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d3318-44168eec0746df4567710644807371c">
+	<sh:targetClass rdf:resource="http://ontologies.metaphacts.com/antennas/MobileAntenna"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d3318-67c0ad820e40a85a7f7d0c5e727e6416">
+	<sh:targetClass rdf:resource="http://ontologies.metaphacts.com/antennas/Point"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#Street"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#City"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a">
+	<sh:class rdf:resource="http://ontologies.metaphacts.com/antennas/Point"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top/Building"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/1a78eabb-7d3f-4990-a17e-f2647e5475c1">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/3e0e6f4e-2615-45e8-84c2-e890210c6981">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/4d63aa8b-6443-4e54-9f3b-f3baf679f2fe">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/87c3bf42-c8f8-4273-a976-b12f69e3b247">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/763eba03-c2d1-4b4f-9769-2c17cf416124">
+	<sh:class rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d">
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/antennaId"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/technology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/powercode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/cellType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/adaptive"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/antennaIsOwnedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/longitude"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/pointIsInStreet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/latitude"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/coordinateSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/pointIsInCity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/antennaHasCoordinates"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/pointIsOnBuilding"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/1a78eabb-7d3f-4990-a17e-f2647e5475c1">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/powercodeParamProvidedByOrg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/3e0e6f4e-2615-45e8-84c2-e890210c6981">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/identifierParamProvidedByOrg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/4d63aa8b-6443-4e54-9f3b-f3baf679f2fe">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/cellTypeParamProvidedByOrg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/isAdaptiveParamProvidedByOrg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/87c3bf42-c8f8-4273-a976-b12f69e3b247">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/technologyParamProvidedByOrg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/763eba03-c2d1-4b4f-9769-2c17cf416124">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/locationParamProvidedByOrg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d">
+	<sh:path rdf:resource="http://ontologies.metaphacts.com/antennas/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+</rdf:RDF>

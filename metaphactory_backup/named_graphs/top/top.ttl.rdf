@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="https://www.w3.org/TR/vocab-org/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:wd="http://www.wikidata.org/entity/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:sp="http://spinrdf.org/sp#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ActOfGod">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ForceMajeureEvent">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CalendarElement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#City">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Continent">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ContinentIncludesCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#countryIsLocatedInContinent">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Country">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Event">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TopLevelElements">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#MenMadeEvent">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountryBelongsToCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Street">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeElement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimePoint">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeZone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#cityHasPostalCode">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#cityIsLocatedInCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#cityIsLocatedInPartOfCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#countryConsistsOfPartOfCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#countryHasTypeOfState">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#logicalLocationIsConnectedToLogicalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryBelongsToCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryConsistsOfPartOfCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryHasTypeOfPartOfCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryIsPartOfCountry">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#physicalLocationIsPartOfPhysicalLocation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#streetBelongsToCity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#swissCityBelongsToSwissCanton">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/04f81e53259e61bd1acc43a1972c05e3">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/3a9344a6e3a5477ab1d81984e6c018a1">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/58c8f2a30268f0054a0fac3f7e17135e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/8d99703df4d387a127e2d41eed138835">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/8e43ba3ae369ba5853103e9c5da75f2d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/9893e5aa5cf204db426958835f0ca7c2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/b1d99de4e67925e56211e10084c8b633">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/ba4cb2e8b9e94351e1354302e79e42c2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/cc462fd0109d8138c3cb738fcfc088c5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d01a60f07688feef0e731fce57616550">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d0e3156eda80684d2cbeb60c5f55252b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d3fd97c2f9ae20cc70cc8426d3655391">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/f3cbcc50cb9957f71131295662529f54">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CityShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CountryShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocationShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountryShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocationShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#StreetShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/Building">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/number">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/c61b30aa-aaea-4fb1-b36d-29b7c63ded1f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/buildingIsLocatedInStreet">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d2742-f5cbbb080e44701b4ae1f0582f3cf0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ActOfGod">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#ForceMajeureEvent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ForceMajeureEvent">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Event"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CalendarElement">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Time">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#TopLevelElements"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#City">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocation">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Continent">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Country">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Event">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#TopLevelElements"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Location">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#TopLevelElements"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocation">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#MenMadeEvent">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#ForceMajeureEvent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountry">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Street">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeElement">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeInterval">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimePoint">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeZone">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#Time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/Building">
+	<rdfs:subClassOf rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top">
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+	<rdfs:comment xml:lang="en">Version 1.0: Initial import</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeInterval">
+	<rdfs:comment>an interval of time specified as two TIME POINTS and bounds on the distance between the two time points</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimePoint">
+	<rdfs:comment>a particular, instantaneous point in time</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/Building">
+	<rdfs:comment xml:lang="en">A individual building in a street.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/number">
+	<rdfs:comment xml:lang="en">Indicates the house number of a building in a street.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top">
+	<license xmlns="http://creativecommons.org/ns#" rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"/>
+	<license xmlns="http://creativecommons.org/ns#" xml:lang="en">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</license>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ActOfGod">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ForceMajeureEvent">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CalendarElement">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Time">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#City">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocation">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Continent">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#ContinentIncludesCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#countryIsLocatedInContinent">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Country">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Event">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TopLevelElements">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Location">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocation">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#MenMadeEvent">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountryBelongsToCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Street">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeElement">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeInterval">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimePoint">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeZone">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#cityHasPostalCode">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#cityIsLocatedInCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#cityIsLocatedInPartOfCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#countryConsistsOfPartOfCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#countryHasTypeOfState">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#logicalLocationIsConnectedToLogicalLocation">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryBelongsToCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryConsistsOfPartOfCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryHasTypeOfPartOfCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#partOfCountryIsPartOfCountry">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#physicalLocationIsPartOfPhysicalLocation">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#streetBelongsToCity">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#swissCityBelongsToSwissCanton">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/Building">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/number">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/buildingIsLocatedInStreet">
+	<rdfs:isDefinedBy rdf:resource="http://ikm-group.ch/archiMEO/top"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CalendarElement">
+	<rdfs:label>CalendarElement</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Time">
+	<rdfs:label>Time</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocation">
+	<rdfs:label>PhysicalLocation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#Location">
+	<rdfs:label>Location</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocation">
+	<rdfs:label>LogicalLocation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeElement">
+	<rdfs:label>TimeElement</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeInterval">
+	<rdfs:label>TimeInterval</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimePoint">
+	<rdfs:label>TimePoint</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#TimeZone">
+	<rdfs:label>TimeZone</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#logicalLocationIsConnectedToLogicalLocation">
+	<rdfs:label>logicalLocationIsConnectedToLogicalLocation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/Building">
+	<rdfs:label>Building</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/number">
+	<rdfs:label xml:lang="en">buildingHasNumber</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/buildingIsLocatedInStreet">
+	<rdfs:label>buildingIsLocatedInStreet</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CityShape">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/8e43ba3ae369ba5853103e9c5da75f2d"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/cc462fd0109d8138c3cb738fcfc088c5"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/d01a60f07688feef0e731fce57616550"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CountryShape">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/3a9344a6e3a5477ab1d81984e6c018a1"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/9893e5aa5cf204db426958835f0ca7c2"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/ba4cb2e8b9e94351e1354302e79e42c2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocationShape">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/8d99703df4d387a127e2d41eed138835"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountryShape">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/04f81e53259e61bd1acc43a1972c05e3"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/58c8f2a30268f0054a0fac3f7e17135e"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/b1d99de4e67925e56211e10084c8b633"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/d3fd97c2f9ae20cc70cc8426d3655391"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocationShape">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/d0e3156eda80684d2cbeb60c5f55252b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#StreetShape">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/f3cbcc50cb9957f71131295662529f54"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d2742-f5cbbb080e44701b4ae1f0582f3cf0">
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/top/c61b30aa-aaea-4fb1-b36d-29b7c63ded1f"/>
+	<sh:property rdf:resource="http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CityShape">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top#City"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#CountryShape">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top#Country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#LogicalLocationShape">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top#LogicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PartOfCountryShape">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top#PartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#PhysicalLocationShape">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top#StreetShape">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top#Street"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid-15b5b59661a64faca3d61a553c37070d2742-f5cbbb080e44701b4ae1f0582f3cf0">
+	<sh:targetClass rdf:resource="http://ikm-group.ch/archiMEO/top/Building"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/04f81e53259e61bd1acc43a1972c05e3">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#Country"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/58c8f2a30268f0054a0fac3f7e17135e">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#PartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/8d99703df4d387a127e2d41eed138835">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#LogicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/9893e5aa5cf204db426958835f0ca7c2">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#PartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/b1d99de4e67925e56211e10084c8b633">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#PartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d0e3156eda80684d2cbeb60c5f55252b">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#PhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe">
+	<sh:class rdf:resource="http://ikm-group.ch/archiMEO/top#Street"/>
+	<sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/04f81e53259e61bd1acc43a1972c05e3">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#partOfCountryBelongsToCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/3a9344a6e3a5477ab1d81984e6c018a1">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#countryIsLocatedInContinent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/58c8f2a30268f0054a0fac3f7e17135e">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#partOfCountryIsPartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/8d99703df4d387a127e2d41eed138835">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#logicalLocationIsConnectedToLogicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/8e43ba3ae369ba5853103e9c5da75f2d">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#cityHasPostalCode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/9893e5aa5cf204db426958835f0ca7c2">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#countryConsistsOfPartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/b1d99de4e67925e56211e10084c8b633">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#partOfCountryConsistsOfPartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/ba4cb2e8b9e94351e1354302e79e42c2">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#countryHasTypeOfState"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/cc462fd0109d8138c3cb738fcfc088c5">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#cityIsLocatedInPartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d01a60f07688feef0e731fce57616550">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#cityIsLocatedInCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d0e3156eda80684d2cbeb60c5f55252b">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#physicalLocationIsPartOfPhysicalLocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/d3fd97c2f9ae20cc70cc8426d3655391">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#partOfCountryHasTypeOfPartOfCountry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/f3cbcc50cb9957f71131295662529f54">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top#streetBelongsToCity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/c61b30aa-aaea-4fb1-b36d-29b7c63ded1f">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top/number"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe">
+	<sh:path rdf:resource="http://ikm-group.ch/archiMEO/top/buildingIsLocatedInStreet"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/c61b30aa-aaea-4fb1-b36d-29b7c63ded1f">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top/d2d4e2a2-f696-4d18-9046-4df8492103fe">
+	<sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ikm-group.ch/archiMEO/top">
+	<dc:contributor>Barbara Thönssen</dc:contributor>
+	<dc:contributor>Knut Hinkelmann</dc:contributor>
+	<dc:creator>Andreas Martin</dc:creator>
+	<dc:creator>Roman Brun</dc:creator>
+	<dc:description xml:lang="en">The Top Level Ontology.</dc:description>
+	<dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</dc:issued>
+	<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-24</dc:modified>
+	<dc:publisher rdf:resource="http://de.dbpedia.org/resource/Fachhochschule_Nordwestschweiz"/>
+	<dc:publisher rdf:resource="http://www.fhnw.ch/business"/>
+	<dc:publisher xml:lang="en">University of Applied Sciences Northwestern Switzerland FHNW</dc:publisher>
+	<dc:rights>Copyright 2012 FHNW</dc:rights>
+	<dc:title xml:lang="en">The Top Level Ontology</dc:title>
+</rdf:Description>
+
+</rdf:RDF>

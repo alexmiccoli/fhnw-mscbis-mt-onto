@@ -1,0 +1,35 @@
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <https://www.w3.org/TR/vocab-org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocabularies.metaphacts.com/geoinformation_metadata> a skos:ConceptScheme;
+  <http://purl.org/dc/terms/title> "Geoinformation Metadata";
+  rdfs:label "Geoinformation Metadata";
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> <http://vocabularies.metaphacts.com/geoinformation_metadata/>;
+  skos:prefLabel "Geoinformation Metadata";
+  skos:hasTopConcept <http://vocabularies.metaphacts.com/geoinformation_metadata/534acfb0-3ee9-4a32-957e-308fdd0b3b04>,
+    <http://vocabularies.metaphacts.com/geoinformation_metadata/5fde33cf-8b15-4cc8-b419-b33baca4b25f> .
+
+<http://vocabularies.metaphacts.com/geoinformation_metadata/534acfb0-3ee9-4a32-957e-308fdd0b3b04>
+  a skos:Concept;
+  skos:prefLabel "LV95";
+  skos:inScheme <http://vocabularies.metaphacts.com/geoinformation_metadata> .
+
+<http://vocabularies.metaphacts.com/geoinformation_metadata/5fde33cf-8b15-4cc8-b419-b33baca4b25f>
+  a skos:Concept;
+  skos:prefLabel "WGS84";
+  skos:inScheme <http://vocabularies.metaphacts.com/geoinformation_metadata> .
+
+<http://vocabularies.metaphacts.com/geoinformation_metadata/18ece6f9-fead-48b6-b2f9-b1596d643ff3>
+  a skos:Collection;
+  skos:prefLabel "Coordinate Systems";
+  skos:member <http://vocabularies.metaphacts.com/geoinformation_metadata/534acfb0-3ee9-4a32-957e-308fdd0b3b04>,
+    <http://vocabularies.metaphacts.com/geoinformation_metadata/5fde33cf-8b15-4cc8-b419-b33baca4b25f> .

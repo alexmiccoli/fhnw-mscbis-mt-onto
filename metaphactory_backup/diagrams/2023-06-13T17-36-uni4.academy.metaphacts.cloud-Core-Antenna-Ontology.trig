@@ -1,0 +1,52 @@
+@prefix Platform: <http://www.metaphacts.com/ontologies/platform#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://uni4.academy.metaphacts.cloud/container/ontodiaDiagramContainer/core_antenna_ontology/context> {
+  <http://ontodia.org/data/e_496ec88b78971574d54063c9aac60c0e> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> _:genid-15b5b59661a64faca3d61a553c37070d529-b1;
+    <http://ontodia.org/schema/v1#resource> <http://ontologies.metaphacts.com/antennas/MobileAntenna> .
+  
+  <http://ontodia.org/data/e_0636f3514888993e3a0646e960818a24> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> _:genid-15b5b59661a64faca3d61a553c37070d529-b2;
+    <http://ontodia.org/schema/v1#resource> <http://ontologies.metaphacts.com/antennas/Point> .
+  
+  <http://ontodia.org/data/l_a456222e47c389db57f96b68c7293dae> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_496ec88b78971574d54063c9aac60c0e>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_0636f3514888993e3a0646e960818a24>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <https://uni4.academy.metaphacts.cloud/container/ontodiaDiagramContainer/core_antenna_ontology>
+    a ldp:Resource, prov:Entity, <http://ontodia.org/schema/v1#Diagram>;
+    rdfs:label "Core Antenna Ontology";
+    prov:wasAttributedTo <http://www.metaphacts.com/resource/user/uniuser>;
+    prov:generatedAtTime "2023-06-10T08:11:11.059Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://ontodia.org/schema/v1#layoutData> _:genid-15b5b59661a64faca3d61a553c37070d529-b0;
+    Platform:diagramForOntology <http://ontologies.metaphacts.com/antennas>;
+    Platform:diagramKind Platform:OntologyDiagram .
+  
+  _:genid-15b5b59661a64faca3d61a553c37070d529-b0 a <http://ontodia.org/schema/v1#Layout>;
+    <http://ontodia.org/schema/v1#hasElement> <http://ontodia.org/data/e_496ec88b78971574d54063c9aac60c0e>,
+      <http://ontodia.org/data/e_0636f3514888993e3a0646e960818a24>;
+    <http://ontodia.org/schema/v1#hasLink> <http://ontodia.org/data/l_a456222e47c389db57f96b68c7293dae> .
+  
+  _:genid-15b5b59661a64faca3d61a553c37070d529-b1 <http://ontodia.org/schema/v1#xCoordValue>
+      -58;
+    <http://ontodia.org/schema/v1#yCoordValue> 302 .
+  
+  _:genid-15b5b59661a64faca3d61a553c37070d529-b2 <http://ontodia.org/schema/v1#xCoordValue>
+      304;
+    <http://ontodia.org/schema/v1#yCoordValue> 342 .
+  
+  _:72b5a89bd2f046dc976ef567bb7535c11498 ldp:contains <https://uni4.academy.metaphacts.cloud/container/ontodiaDiagramContainer/core_antenna_ontology> .
+}
+
+{
+  _:72b5a89bd2f046dc976ef567bb7535c11498 a ldp:Container, ldp:Resource, prov:Entity .
+}

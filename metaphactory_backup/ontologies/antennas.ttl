@@ -1,0 +1,263 @@
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <https://www.w3.org/TR/vocab-org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://ontologies.metaphacts.com/antennas> a owl:Ontology;
+  <http://purl.org/dc/terms/title> "Antennas";
+  rdfs:label "Antennas";
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> <http://ontologies.metaphacts.com/antennas/>;
+  owl:imports <http://purl.org/toco/>, <http://www.w3.org/ns/org#>, <http://ikm-group.ch/archiMEO/top> .
+
+<http://ontologies.metaphacts.com/antennas/MobileAntenna> a owl:Class;
+  rdfs:subClassOf <http://purl.org/toco/AccessPoint>, skos:Concept;
+  rdfs:comment "A mobile antenna is a device designed to transmit and receive signals wirelessly, typically used for communication purposes, while an access point is a networking device that provides wireless connectivity to devices within its range, therefore a mobile antenna can be considered as a type of access point when it enables wireless connectivity for mobile devices."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "MobileAntenna" .
+
+<http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26> a
+    sh:PropertyShape;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/antennaId>;
+  sh:datatype xsd:string;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/antennaId> a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines each antenna uniquely."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Antenna ID" .
+
+<http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695> a
+    sh:PropertyShape;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/technology>;
+  sh:datatype xsd:string .
+
+<http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702> a
+    sh:PropertyShape;
+  sh:path <http://ontologies.metaphacts.com/antennas/powercode>;
+  sh:datatype xsd:string;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902> a
+    sh:PropertyShape;
+  sh:path <http://ontologies.metaphacts.com/antennas/cellType>;
+  sh:datatype xsd:string;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6> a
+    sh:PropertyShape;
+  sh:path <http://ontologies.metaphacts.com/antennas/adaptive>;
+  sh:datatype xsd:boolean;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/technology> a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines the mobile communication technology the antenna is used for."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Technology" .
+
+<http://ontologies.metaphacts.com/antennas/powercode> a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines the radiation intensity of an antenna, where it is known."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Powercode" .
+
+<http://ontologies.metaphacts.com/antennas/cellType> a owl:DatatypeProperty;
+  rdfs:comment "This attribute defines the form format of the cell in use by the antenna.";
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Cell Type" .
+
+<http://ontologies.metaphacts.com/antennas/adaptive> a owl:DatatypeProperty;
+  rdfs:comment "The adaptivity attribute defines whether a mobile antenna is adaptive, indicating its capacity to dynamically adjust its parameters or characteristics in response to changing environmental conditions or communication requirements."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "isAdaptive" .
+
+<http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/antennaIsOwnedBy>;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f> a
+    sh:PropertyShape;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/longitude>;
+  sh:datatype xsd:double;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e> a
+    sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#Street>;
+  sh:path <http://ontologies.metaphacts.com/antennas/pointIsInStreet>;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b> a
+    sh:PropertyShape;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/latitude>;
+  sh:datatype xsd:double;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54> a
+    sh:PropertyShape;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/coordinateSystem>;
+  sh:datatype xsd:string;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789> a
+    sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top#City>;
+  sh:path <http://ontologies.metaphacts.com/antennas/pointIsInCity>;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/Point> a owl:Class;
+  rdfs:comment "A geographic point refers to a specific location on the Earth's surface, defined by its latitude and longitude coordinates."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Point" .
+
+<http://ontologies.metaphacts.com/antennas/longitude> a owl:DatatypeProperty;
+  rdfs:comment "Longitude is a geographic attribute that specifies the east-west position of a point on the Earth's surface, measured in degrees, ranging from -180° (west) to +180° (east). It is part of the coordinate system used to determine precise locations on the Earth."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Longitude" .
+
+<http://ontologies.metaphacts.com/antennas/pointIsInStreet> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "pointIsInStreet" .
+
+<http://ontologies.metaphacts.com/antennas/latitude> a owl:DatatypeProperty;
+  rdfs:comment "Latitude is a geographic attribute that denotes the north-south position of a point on the Earth's surface, measured in degrees, ranging from -90° (south) to +90° (north). It is also an essential component of the coordinate system used to determine precise locations on the Earth."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Latitude" .
+
+<http://ontologies.metaphacts.com/antennas/coordinateSystem> a owl:DatatypeProperty;
+  rdfs:comment "A coordinate system is a reference framework that defines how geographic points are represented on a map or the Earth's surface. The most commonly used coordinate system is the geographic coordinate system, which uses latitude and longitude as coordinates to identify specific locations worldwide. It enables accurate positioning and navigation on the Earth."@en;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Coordinate System" .
+
+<http://ontologies.metaphacts.com/antennas/pointIsInCity> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "pointIsInCity" .
+
+<http://ontologies.metaphacts.com/antennas/antennaHasCoordinates> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "antennaHasCoordinates" .
+
+<http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a> a
+    sh:PropertyShape;
+  sh:class <http://ontologies.metaphacts.com/antennas/Point>;
+  sh:minCount 1;
+  sh:path <http://ontologies.metaphacts.com/antennas/antennaHasCoordinates>;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/antennaIsOwnedBy> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "antennaIsOwnedBy" .
+
+<http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2> a
+    sh:PropertyShape;
+  sh:class <http://ikm-group.ch/archiMEO/top/Building>;
+  sh:path <http://ontologies.metaphacts.com/antennas/pointIsOnBuilding>;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/pointIsOnBuilding> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "pointIsOnBuilding" .
+
+<http://ontologies.metaphacts.com/antennas/1a78eabb-7d3f-4990-a17e-f2647e5475c1> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:path <http://ontologies.metaphacts.com/antennas/powercodeParamProvidedByOrg> .
+
+<http://ontologies.metaphacts.com/antennas/3e0e6f4e-2615-45e8-84c2-e890210c6981> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:path <http://ontologies.metaphacts.com/antennas/identifierParamProvidedByOrg> .
+
+<http://ontologies.metaphacts.com/antennas/4d63aa8b-6443-4e54-9f3b-f3baf679f2fe> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:path <http://ontologies.metaphacts.com/antennas/cellTypeParamProvidedByOrg> .
+
+<http://ontologies.metaphacts.com/antennas/6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:path <http://ontologies.metaphacts.com/antennas/isAdaptiveParamProvidedByOrg> .
+
+<http://ontologies.metaphacts.com/antennas/87c3bf42-c8f8-4273-a976-b12f69e3b247> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:path <http://ontologies.metaphacts.com/antennas/technologyParamProvidedByOrg> .
+
+<http://ontologies.metaphacts.com/antennas/763eba03-c2d1-4b4f-9769-2c17cf416124> a
+    sh:PropertyShape;
+  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
+  sh:path <http://ontologies.metaphacts.com/antennas/locationParamProvidedByOrg> .
+
+<http://ontologies.metaphacts.com/antennas/powercodeParamProvidedByOrg> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "PowercodeParamProvidedByOrg" .
+
+<http://ontologies.metaphacts.com/antennas/identifierParamProvidedByOrg> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "IdentifierParamProvidedByOrg" .
+
+<http://ontologies.metaphacts.com/antennas/cellTypeParamProvidedByOrg> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "CellTypeParamProvidedByOrg" .
+
+<http://ontologies.metaphacts.com/antennas/isAdaptiveParamProvidedByOrg> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "isAdaptiveParamProvidedByOrg" .
+
+<http://ontologies.metaphacts.com/antennas/locationParamProvidedByOrg> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "LocationParamProvidedByOrg" .
+
+<http://ontologies.metaphacts.com/antennas/technologyParamProvidedByOrg> a owl:ObjectProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "TechnologyParamProvidedByOrg" .
+
+[] a sh:NodeShape;
+  sh:property <http://ontologies.metaphacts.com/antennas/9a7ff516-9cd9-4516-8972-98d451da9b26>,
+    <http://ontologies.metaphacts.com/antennas/0a4c25bb-ea9d-45c5-9040-299bee8fd695>,
+    <http://ontologies.metaphacts.com/antennas/50ea5fd5-81fb-4930-bd93-4fd0308bd702>,
+    <http://ontologies.metaphacts.com/antennas/ad9dcdd1-db34-4563-9373-3953540a3902>,
+    <http://ontologies.metaphacts.com/antennas/f8362985-2a78-4367-8657-65d0f44993b6>,
+    <http://ontologies.metaphacts.com/antennas/7b0b6595-b293-40c2-88dd-faca0382dc3e>,
+    <http://ontologies.metaphacts.com/antennas/8570b5fc-1629-4881-8fbb-75aeda3c458a>,
+    <http://ontologies.metaphacts.com/antennas/1a78eabb-7d3f-4990-a17e-f2647e5475c1>,
+    <http://ontologies.metaphacts.com/antennas/3e0e6f4e-2615-45e8-84c2-e890210c6981>,
+    <http://ontologies.metaphacts.com/antennas/4d63aa8b-6443-4e54-9f3b-f3baf679f2fe>,
+    <http://ontologies.metaphacts.com/antennas/6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa>,
+    <http://ontologies.metaphacts.com/antennas/87c3bf42-c8f8-4273-a976-b12f69e3b247>;
+  sh:targetClass <http://ontologies.metaphacts.com/antennas/MobileAntenna> .
+
+[] a sh:NodeShape;
+  sh:property <http://ontologies.metaphacts.com/antennas/39842fa6-87b0-496b-8ef4-4f43fc94124f>,
+    <http://ontologies.metaphacts.com/antennas/8a315438-3677-4c08-92a1-05f9cf52135e>,
+    <http://ontologies.metaphacts.com/antennas/aaa6fa31-9fe9-4aee-823e-3f8573fc219b>,
+    <http://ontologies.metaphacts.com/antennas/aeb67154-4d1f-417d-8cdb-58d29aaf8d54>,
+    <http://ontologies.metaphacts.com/antennas/ef68eedf-090d-4f68-b449-6076da628789>,
+    <http://ontologies.metaphacts.com/antennas/53023700-985b-4af1-826b-2514220d75c2>,
+    <http://ontologies.metaphacts.com/antennas/763eba03-c2d1-4b4f-9769-2c17cf416124>,
+    <http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d>;
+  sh:targetClass <http://ontologies.metaphacts.com/antennas/Point> .
+
+<http://ontologies.metaphacts.com/antennas/a8a13790-a5bd-4147-8b45-559f132fbf1d> a
+    sh:PropertyShape;
+  sh:minCount 0;
+  sh:path <http://ontologies.metaphacts.com/antennas/source>;
+  sh:datatype xsd:string;
+  sh:maxCount 1 .
+
+<http://ontologies.metaphacts.com/antennas/source> a owl:DatatypeProperty;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
+  rdfs:label "Source" .

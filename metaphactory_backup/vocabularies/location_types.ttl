@@ -1,0 +1,47 @@
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <https://www.w3.org/TR/vocab-org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocabularies.metaphacts.com/location_types> a skos:ConceptScheme;
+  <http://purl.org/dc/terms/title> "Location Types";
+  rdfs:label "Location Types";
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> <http://vocabularies.metaphacts.com/location_types/>;
+  skos:prefLabel "Location Types";
+  skos:hasTopConcept <http://vocabularies.metaphacts.com/location_types/c5401942-9d5f-4801-94f8-d3537502f5e3>,
+    <http://vocabularies.metaphacts.com/location_types/cb24bfe9-dee3-464d-b358-382d7f1c8ca3> .
+
+<http://vocabularies.metaphacts.com/location_types/c5401942-9d5f-4801-94f8-d3537502f5e3>
+  a skos:Concept;
+  skos:prefLabel "Infrastructure Location";
+  skos:inScheme <http://vocabularies.metaphacts.com/location_types> .
+
+<http://vocabularies.metaphacts.com/location_types/cb24bfe9-dee3-464d-b358-382d7f1c8ca3>
+  a skos:Concept;
+  skos:prefLabel "Administrative Location";
+  skos:inScheme <http://vocabularies.metaphacts.com/location_types> .
+
+<http://vocabularies.metaphacts.com/location_types/31019f85-6d37-4b48-b9c1-d0c581c1329c>
+  a skos:Concept;
+  skos:prefLabel "Canton";
+  skos:inScheme <http://vocabularies.metaphacts.com/location_types>;
+  skos:broader <http://vocabularies.metaphacts.com/location_types/cb24bfe9-dee3-464d-b358-382d7f1c8ca3> .
+
+<http://vocabularies.metaphacts.com/location_types/353983cd-50eb-4dd1-ab4b-809b7a4edb4a>
+  a skos:Concept;
+  skos:prefLabel "Administrative Area";
+  skos:inScheme <http://vocabularies.metaphacts.com/location_types>;
+  skos:broader <http://vocabularies.metaphacts.com/location_types/cb24bfe9-dee3-464d-b358-382d7f1c8ca3> .
+
+<http://vocabularies.metaphacts.com/location_types/2364f210-3fca-4eb8-a3d5-0e7d214bcbb0>
+  a skos:Concept;
+  skos:prefLabel "Locality";
+  skos:inScheme <http://vocabularies.metaphacts.com/location_types>;
+  skos:broader <http://vocabularies.metaphacts.com/location_types/cb24bfe9-dee3-464d-b358-382d7f1c8ca3> .

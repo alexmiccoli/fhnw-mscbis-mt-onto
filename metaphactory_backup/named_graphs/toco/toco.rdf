@@ -1,0 +1,3456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="https://www.w3.org/TR/vocab-org/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:wd="http://www.wikidata.org/entity/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:sp="http://spinrdf.org/sp#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnits">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/uo.owl/unit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/apsInRange">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AccessPoint">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDevice">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/belongsTo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/User">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/from">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Interface">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Link">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAssociatedStations">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasBandwidth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLinkProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDatarate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDevice">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFlow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Flow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SystemDevice">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFlowAction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasInterface">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Device">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLTEAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LTEAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWirelessAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiWLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAssociationProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWirelessLinkProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiWLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLink">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasPort">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRadianceAngle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRoundTripTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasSatelliteAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasService">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Service">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasStandardDeviation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasThroughPut">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasTransmitPower">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasTxpower">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasUserDeviceStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDeviceStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWiFiAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiWLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWiFiWLAN">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWiredLink">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiredLink">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WirelessAssociation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/isIn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/range">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/stationsInRange">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserEquipment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/to">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasValue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/channel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFlowProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dlDst">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dlSrc">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/driver">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/flags">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/frequency">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hardTimeout">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAntennaGain">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAntennaHeight">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDistance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasErrorCode">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFieldOfView">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiUserEquipment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiUserEquipmentProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainOfConcentrator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainofOpticalFilter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAccessPoint">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAccessPointProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasHalfIntensityAngle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIP">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIncidentAngle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasInterfaceName">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasJoinDate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasMAC">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasOpticalTransmittedPower">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasPacketLoss">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRespansivity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceEndTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceStartTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceStatus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasUserID">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/idleTimeout">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/inPort">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/isUP">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/mode">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/nwProtocol">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/nwTos">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/priority">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ssid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/tableId">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/toPort">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/firstName">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000008">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000017">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000028">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000035">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000058">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000105">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000060">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000092">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000094">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000111">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000113">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000114">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000223">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000224">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000231">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000232">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000233">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000235">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000325">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000331">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000332">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010005">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010008">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ConceptEntities">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Attached">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AudioService">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AudioSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Session">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/BaseStation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/CellularUserEquipment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/PhysicalInfrastructure">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Detached">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Drop">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/FileTransferService">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Forward">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Host">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Output">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/PathFlow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteGroundStation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteRelayStation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Switch">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Text">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/VideoService">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/VideoSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiAccessPoint">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiUserEquipment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/unReachable">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurementShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/65cbccc55568429724b8f478534e412a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9e0d8e3d4b0460f3f9c90c20137433c0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ac379363f4990122b348621ac3fc78e5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0217d7d29b73cee3b2a7b24a47e3c6c9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/05a4e8c5945ff1997e6eb07d7c078fe9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/078d7813aec84f0fdf3cab67a9691b34">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0a08b4aa5e58dc435d7a89335d216f8c">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0a2570253fdd6224288a17813eba32b4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0c20faef953f51f780c644e32bc9be0b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/10d303e3fce6f76906ca039339304fa0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/13effce3a9d47ab82141a194e937e6a4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/14503499a42ba325245cabee3444ded5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/172382a059e61f60b739a6e8d904fff3">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/18ea982d06040e5074c4aa678545a58c">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/1df1141de9564499f785fe87620ebf07">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/23a19e69bc0a363e92e49aba18b4c63f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/289ed8437f6a1c3f499caf2ac4541a74">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/29c3a5d12df8ba4f3bb0b250a29218a8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2a332d0a84e4575d57e8bb7acc5be324">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2b027421a5f804bd1942166984e1baaf">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2dca135c5137baffb632aeffb67e0aff">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3867995aa8f5011281dbd95c4e03f4f6">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/391a1239a5a1d64cb249419ab0a10845">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/395f523ac3d4c3295d3d6866e830def5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3a985f8258720c369853c600a70429f9">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3aaa30b67741de1b37f08ccf11fd3a96">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3ffcbe8160a0606e214f0fea00b5ff68">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/413b2156a35f5f3219e21351bb4af0c7">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/4496ce8f544702a6870f7a7ccf5f3a38">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/44c5fa81dbd30f11df2854ffb80a3f2a">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/458b75ce28bcf52c62de1c981e908a69">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/47bb12813b109ff5a0676ab375f44ca0">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/4bc11a7988db4245c437cd15f6339b93">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/54ed1c77e50ad5228aed01f468b473fe">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/5f50c16c5c1d1a69d8914cd97d246f56">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/6490e82ad7665342b6c71a9c6413eab8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/6fa54f9c8a38a5532d8a894ab817fb02">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/706ca3ea48325921443ca48250a2f074">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/75c22f4b75ba8f25f6d56cb473c5ebff">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/819b268e505afa45f7fa5d57741e12f5">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/89e1de3b32259c63d7855b3e64b55e47">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/8a0548a1338f8d8ced0e81b641611db7">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/8db207f583dc54d01c86dbcacff5dc5c">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/901bb6c4c8223df17ef856b4d935617b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9890d14c6da292dc4d3ca587ec15ef64">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9a5752b96425fdc61bbdeaf8316667c2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9a88acea47a8ee9ba0a06d78773309cd">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AccessPointShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ActionShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cceafcc7400d92b6de551a8ee1f9dd64">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/DeviceShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a2eb7a815b0dd4ccf6ad95e314588e8d">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b51a01fa2118fcb0e4c76b4f7bba3c5f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c0b4b5fddcf9dab6ce39ca9f8b244561">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d26bcbfbb4a6c9529cb7143a2a3a82c3">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d96a764fd921b7caf28560a60056db67">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fb08bfdfcd440bbfd6bf907104e07b06">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fb8ef5195f781a528fe6763201315317">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ffa627c90b2f93431bad38fc95750b9e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/FlowShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a8a2b067b776a7cbe9336c9ee39b4950">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b8b180b88104c97386fc7f12fa5d0a3f">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c1ca3d1917404609ae0658b95e4e0d17">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ca3b4b51b2f168a8af3a6ffdb044bffe">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cb980022323d3e76623ea74c378254f7">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f09e8facb50f979b42d1efaded5a5c99">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/InterfaceShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a957b9e64cd426dd9574d786fc961ed2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/e7a695a984e2424e86ae6731b9fd77df">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/eb266760b8aecfa0ede88d330a454f41">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAccessPointShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/efc1ca34cbe4d31baf54830e77c7685e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f536b7b0b5133d59fae13d45bed3985b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAssociationShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b021342fda08aabc6be0853ff42ac343">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b2905c7bd89fc2cc3823031a49303684">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiUserEquipmentShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiWLANShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d7f09c00a6184a5975d0da3e504b6e90">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LinkShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b428404e10d27006337fd8a57eeb28fa">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ea608526a3df17370c3556e33eb56ce8">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f9e63646bb01b78b08e7e78f43b86740">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ServiceShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a51e785a1cb599a7e206fb1e9da6e977">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ca424b7dc9b54265e287511f70553481">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dd3f3de6a4c80178c4f8fe3a2c35340b">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SystemDeviceShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b120c38a28a58f02127c339af8fea9bf">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDeviceShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a4bdf0911a03a1da9a41ded230b5daa2">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c0aaa5fca6f5d55b52954c2cdca22cde">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c96fb1ae21777308cfd49627090dff48">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dc7dc17556a159a2911e87b2cd8198b4">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WLANShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/bf9d56515dc8d1e44389640afd3d459c">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dc9ce47fbb78dcb4ebfad93f008decd1">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiWLANShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WirelessAssociationShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/e7990c6dd6a3dca6de078b32328bc4ef">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fabc187d844000bd2477a93073025e1e">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/febd2c1781966d53f8c50918bc225cbf">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThingShape">
+	<rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/from">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAssociatedStations">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasBandwidth">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDatarate">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLTEAssociation">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWirelessAssociation">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLink"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAssociation">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAssociationProperty">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWirelessLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWirelessLinkProperty">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiWLAN">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWLAN">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasInterface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasPort">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasInterface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRadianceAngle">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAssociationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRoundTripTime">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasSatelliteAssociation">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasStandardDeviation">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasThroughPut">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasTransmitPower">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasTxpower">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWiFiAssociation">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWiFiWLAN">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasWiredLink">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLink"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/to">
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cookie">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dlDst">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dlSrc">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/flags">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hardTimeout">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDistance">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAssociationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFieldOfView">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiUserEquipmentProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainOfConcentrator">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiUserEquipmentProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainofOpticalFilter">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAccessPointProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasHalfIntensityAngle">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAccessPointProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIncidentAngle">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAssociationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasOpticalTransmittedPower">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAccessPointProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRespansivity">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasLiFiAccessPointProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/idleTimeout">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/inPort">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/nwProtocol">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/nwTos">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/priority">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/tableId">
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/toco/hasFlowProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/uo.owl/unit">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AccessPoint">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/SystemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDevice">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Device"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/User">
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Interface">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/PhysicalInfrastructure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Link">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/PhysicalInfrastructure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Flow">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SystemDevice">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Device"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Action">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Device">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/PhysicalInfrastructure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LTEAssociation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/WirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAssociation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/WirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiWLAN">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/WLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteAssociation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/WirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Service">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDeviceStatus">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WLAN">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Interface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiAssociation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/WirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiWLAN">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/WLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiredLink">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Link"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WirelessAssociation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Link"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserEquipment">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThing">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiUserEquipment">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserEquipment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAccessPoint">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/AccessPoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000008">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000017">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000028">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000035">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000058">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000105"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000105">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000060">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000092">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000058"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000094">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000060"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000105"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000111">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000113">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000114">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000113"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000223">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000224">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000231">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000232">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000231"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000233">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000231"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000235">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000231"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000325">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000105"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000331">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000231"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000332">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000231"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010005">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000060"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010008">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000060"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Attached">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserDeviceStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AudioService">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Service"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AudioSession">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Session"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Session">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/ConceptEntities"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/BaseStation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/SystemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/CellularUserEquipment">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserEquipment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Detached">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserDeviceStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Drop">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Action"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/FileTransferService">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Service"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Forward">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Action"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Host">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Output">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Action"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/PathFlow">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Flow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteGroundStation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserEquipment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteRelayStation">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/SystemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Switch">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/SystemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Text">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Service"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/VideoService">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Service"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/VideoSession">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/Session"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiAccessPoint">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/AccessPoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiUserEquipment">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserEquipment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/unReachable">
+	<rdfs:subClassOf rdf:resource="http://purl.org/toco/UserDeviceStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/">
+	<title xmlns="http://purl.org/dc/terms/" xml:lang="en">Toucan Ontology</title>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+	<issued xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-3-1</issued>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-3-29</modified>
+	<preferredNamespacePrefix xmlns="http://purl.org/vacob/vann/">toco</preferredNamespacePrefix>
+	<description xmlns="http://purl.org/dc/terms/">A ontology developed for telecommunciation network systems with hybrid technologies, e.g., WiFi, LiFi, LTE, 2G/3G, optical, etc.</description>
+	<rdfs:comment xml:lang="en">Version 1.1: creation</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnits">
+	<rdfs:comment>the unit of an observation or measurement.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/uo.owl/unit">
+	<rdfs:comment>reused from Units of measurement Ontology</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement">
+	<rdfs:comment>reused from SenSei Observation And Measurement Ontology (http://purl.oclc.org/net/unis/ontology/sensordata.owl).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AccessPoint">
+	<rdfs:comment>a wireless access point, or more generally just access point (AP), is a networking hardware device that allows a Wi-Fi/Li-Fi device to connect to a wired network. The AP usually connects to a router (via a wired network) as a standalone device, but it can also be an integral component of the router itself. An AP is differentiated from a hotspot, which is the physical location where Wi-Fi access to a WLAN is available.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDevice">
+	<rdfs:comment>User Devices, requiring connectivity services, e.g., phones, tablets, laptops, wearable devices, etc.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/User">
+	<rdfs:comment>reused from foaf (http://xmlns.com/foaf/0.1/). Represent a user in the telecommunication system.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/from">
+	<rdfs:comment>the source node that the link is transmit from.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAssociatedStations">
+	<rdfs:comment>in wireless networks, the user equipments (mobile stations in another term, e.g., phones, laptops, tablets, etc.) that are associated to the access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasBandwidth">
+	<rdfs:comment>the bandwidth of the link</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Flow">
+	<rdfs:comment>the flow entry in a flow table inside a switch or route. Defined by OpenFlow protocol.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SystemDevice">
+	<rdfs:comment>All the physical facilities in the telecommunication system that provide the communication service to uses. For example: base station towers, Wi-Fi access points, switches, servers, etc.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Action">
+	<rdfs:comment>the action of a flow defined in OpenFlow protocol</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasInterface">
+	<rdfs:comment>the fact that a device has a interface.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Device">
+	<rdfs:comment>represent all the devices in the physical infrastructure of telecommunciation system. 
+
+According to its user, could be divided into UserDevice and SystemDevice.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LTEAssociation">
+	<rdfs:comment>the electromagnetic wave carring modulated signal between LTE base station, or eNodeB, and user equipment</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAssociation">
+	<rdfs:comment>the visiable light carring modulated signals in Li-Fi network. Transmited and received by LiFi user equipment and LiFi access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiWLAN">
+	<rdfs:comment>WLAN interface on the devices in LIFi network, e.g., LiFi user equipment, LiFi access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAssociationProperty">
+	<rdfs:comment>The properties of the visiable light association between the LED on LiFi access point and LiFi user equipment.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRadianceAngle">
+	<rdfs:comment>the radiance angle of the light ray transmitted from LED on LiFi access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRoundTripTime">
+	<rdfs:comment>the round trip time of a link, which is the time taken for signal travel a round trip via this link.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteAssociation">
+	<rdfs:comment>the milli-meter electromagnetic wave carring modulated signal between satellite base stations and ground station.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Service">
+	<rdfs:comment>a communication service, e.g., voice, video, file uploading/downloading, etc.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasStandardDeviation">
+	<rdfs:comment>After multiple round trip time tested on a link, the deviation of these test results.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WLAN">
+	<rdfs:comment>A wireless local area network (WLAN) interface, also known as WLAN, is the interface of a wireless computer network that links two or more devices using wireless communication within a limited area such as a home, school, computer laboratory, or office building.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiAssociation">
+	<rdfs:comment>the electromagnetic wave carring modulated signal between LTE base station, or eNodeB, and user equipment</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiWLAN">
+	<rdfs:comment>WLAN interface on the devices in LIFi network, e.g., LiFi user equipment, LiFi access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiredLink">
+	<rdfs:comment>wired link through twisted cable, optical fiber, etc.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WirelessAssociation">
+	<rdfs:comment>the electromeganetic radio transmiting through wireless channels in wireless network, carring communication data. Depend on its frequency, it could be visiable light, micro waves, radio waves.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/isIn">
+	<rdfs:comment>the relation that a interface belongs to a device. A device can have multiple interfaces, but a interface can be in one and only one device.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/range">
+	<rdfs:comment>the signal range of wireless devices, such as WiFi access point, LiFi access point, WiFi mobile station, and LiFi mobile station.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/stationsInRange">
+	<rdfs:comment>in wireless networks (WiFi/LiFi), the mobile stations in the range of the access points.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserEquipment">
+	<rdfs:comment>any device used directly by an end-user to communicate. It can be a hand-held telephone, a laptop computer equipped with a mobile broadband adapter, or any other device.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/to">
+	<rdfs:comment>the destination node of the link.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+	<rdfs:comment>The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnit">
+	<rdfs:comment>reused from SENSEI Observation and Measurement Ontology.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasValue">
+	<rdfs:comment>the value of an observation or measurement.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/channel">
+	<rdfs:comment>the channel id of a interface.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dlDst">
+	<rdfs:comment>the Ethernet destination address of the flow. It should be an MAC address, with 6 pairs of hexadecimal digits.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dlSrc">
+	<rdfs:comment>the Ethernet source address of the flow. It should be an MAC address with 6 pairs of hexadecimal digits</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/frequency">
+	<rdfs:comment>the frequency of the radio wave transmitted by a wireless interface (WLAN).</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAntennaGain">
+	<rdfs:comment>the gain of an antenna on the wireless interface.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAntennaHeight">
+	<rdfs:comment>the height of the antenna of a wireless interface</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDistance">
+	<rdfs:comment>the Euclidean distance between the LiFi user equipment and access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasErrorCode">
+	<rdfs:comment>the error code of a service.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFieldOfView">
+	<rdfs:comment>Field of view (FOV) is the open observable area where a LiFi user equipment could receive visiable light signal. It is defined by let the incident angle of the LiFi user equipment equals to Pi/2.
+
+If the incident angle larger than Pi/2, the light ray is out of the FOV, thus cannot be received by the LiFi user equipment.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiUserEquipment">
+	<rdfs:comment>any device used directly by an end-user to communicate. It can be a hand-held telephone, a laptop computer equipped with a mobile broadband adapter, or any other device.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiUserEquipmentProperty">
+	<rdfs:comment>properties of LiFi user equipments.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainOfConcentrator">
+	<rdfs:comment>The gain of the concentrator on the LiFi user equipment, usually equals to 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainofOpticalFilter">
+	<rdfs:comment>Gain of optical filter on LiFi access point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAccessPoint">
+	<rdfs:comment>The access point in Li-Fi network. Li-Fi is a wireless optical networking technology that uses light-emitting diodes (LEDs) for data transmission.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAccessPointProperty">
+	<rdfs:comment>datatype properties dedicated for LiFi access points</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasHalfIntensityAngle">
+	<rdfs:comment>The angle of half intensity of the LED light transmiting visible light signal in a LiFi access point. 
+
+A fixed value. It is the angle where the radiated intensity will be half as intense as it would be at 0 degrees, or pointing straight ahead.
+
+Factors that contribute to the angle of half intensity include the amount of diffusing material in the epoxy, the shape of the reflector cup which surrounds the LED chip, the shape of the LED lens, the distance from the LED to the tip of the lens, and the type of emitter chip.
+
+The most common value is Pi/3.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIP">
+	<rdfs:comment>the IP address of the interface.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIncidentAngle">
+	<rdfs:comment>The angle of incidence of the LED receiver on LiFi user equipment, which is the angle between the visiable light ray incident on a surface and the line perpendicular to the surface at the point of incidence, called the normal.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasInterfaceName">
+	<rdfs:comment>the port number of an interface</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasJoinDate">
+	<rdfs:comment>the join date of the user device</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasMAC">
+	<rdfs:comment>the MAC address of the interface.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasOpticalTransmittedPower">
+	<rdfs:comment>the transmitted power of the LED on the LiFi access point</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasPacketLoss">
+	<rdfs:comment>the packet loss rate of a link, usually in percentage.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceEndTime">
+	<rdfs:comment>the time that a service ends.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceStartTime">
+	<rdfs:comment>the start time of a service.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceStatus">
+	<rdfs:comment>the status of the service.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceType">
+	<rdfs:comment>the type of communication services, e.g., video, audio, file transmit, text transmiting, etc.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasUserID">
+	<rdfs:comment>the user ID of the user</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/inPort">
+	<rdfs:comment>the port number of the in port of the flow, or could be a keyword, such as "LOCAL"</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/isUP">
+	<rdfs:comment>indicate whether a interface is up or not.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/nwProtocol">
+	<rdfs:comment>network protocol. The nw_proto property of a flow.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/nwTos">
+	<rdfs:comment>network type of service. the nw_tos property of a flow. It should be a decimal number with the value between 0-255.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ssid">
+	<rdfs:comment>in wireless networks, the ssid of the network this device belongs to.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/toPort">
+	<rdfs:comment>the port number of the port forward to defined by the to_port property of the flow action OUTPUT.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+	<rdfs:comment>the altitude of a spartial thing, i.e., a point.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/firstName">
+	<rdfs:comment>the first name of a user.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+	<rdfs:comment>the gender of a user, reused from foaf</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName">
+	<rdfs:comment>the last name of a person.
+Reused from foaf</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/BaseStation">
+	<rdfs:comment>a "land station in the land mobile service." -- according to the International Telecommunication Union's (ITU) Radio Regulations (RR).
+
+it is a transceiver connecting a number of other devices to one another and/or to a wider area. In LTE, it is also known as eNodeB.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/CellularUserEquipment">
+	<rdfs:comment>User deivce in a Cellular network.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/PhysicalInfrastructure">
+	<rdfs:comment>Describe all the physical resources in a telecommunication network system, which is divided into three main modules, namely, device, interface, link. 
+
+Please be reminded the electromagnetic wave (which is the links of all wireless communication netwoks), even if it is invisable, physically exists. Thus, it is also described in the subclass of "net;PhysicalInfrastructure".</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Host">
+	<rdfs:comment>A host is a computer or other device connected to a computer network. It is a network node that is assigned a network address.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteGroundStation">
+	<rdfs:comment>used in satellite network. Also known as earth station, or earth terminal, it is a terrestrial radio station designed for extraplanetary telecommunication with spacecraft (constituting part of the ground segment of the spacecraft system), or reception of radio waves from astronomical radio sources. Ground stations may be located either on the surface of the Earth, or in its atmosphere.[1] Earth stations communicate with spacecraft by transmitting and receiving radio waves in the super high frequency or extremely high frequency bands (e.g., microwaves). When a ground station successfully transmits radio waves to a spacecraft (or vice versa), it establishes a telecommunications link. A principal telecommunications device of the ground station is the parabolic antenna.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SatelliteRelayStation">
+	<rdfs:comment>An artificial satellite, that relays and amplifies radio telecommunications signals via a transponder; it creates a communication channel between a source transmitter and a receiver at different locations on Earth. Communications satellites are used for television, telephone, radio, internet, and military applications.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/Switch">
+	<rdfs:comment>A network switch (also called switching hub, bridging hub, officially MAC bridge) is a computer networking device that connects devices together on a computer network by using packet switching to receive, process, and forward data to the destination device.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiAccessPoint">
+	<rdfs:comment>An access point in a WiFi network</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiUserEquipment">
+	<rdfs:comment>a user quipment in Wi-Fi network</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+	<rdfs:comment>The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/">
+	<preferredNamespaceUri xmlns="http://purl.org/vacob/vann/">http://purl.org/toco/</preferredNamespaceUri>
+	<rights xmlns="http://purl.org/dc/terms/">Copyright  © 2015 Qianru Zhou</rights>
+	<publisher xmlns="http://purl.org/dc/terms/" rdf:resource="http://hw.ac.uk"/>
+	<license xmlns="http://creativecommons.org/ns#" rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="http://www.macs.hw.ac.uk/~ajg33/"/>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="https://www.eng.ed.ac.uk/about/people/mr-mohammad-dehghani-soltani"/>
+	<contributor xmlns="http://purl.org/dc/terms/" rdf:resource="https://www.hw.ac.uk/staff/uk/eps/stephen-mclaughlin.htm"/>
+	<creator xmlns="http://purl.org/dc/terms/" rdf:resource="https://www.gla.ac.uk/schools/computing/staff/qianruzhou/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+	<rdfs:isDefinedBy>the latitude of a point</rdfs:isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+	<rdfs:isDefinedBy>the longitude of a spartial thing, i.e., a point.</rdfs:isDefinedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnits">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/uo.owl/unit">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/apsInRange">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/belongsTo">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/from">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAssociatedStations">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasBandwidth">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLinkProperty">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDatarate">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDevice">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFlow">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFlowAction">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasInterface">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLink">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRadianceAngle">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasService">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasTransmitPower">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasTxpower">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/isIn">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/range">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/stationsInRange">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/to">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThing">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnit">
+	<rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasValue">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/channel">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cookie">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFlowProperty">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/flags">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hardTimeout">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAntennaGain">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasAntennaHeight">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasDistance">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasErrorCode">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasFieldOfView">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiUserEquipmentProperty">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainOfConcentrator">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasGainofOpticalFilter">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasLiFiAccessPointProperty">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasHalfIntensityAngle">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIP">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasIncidentAngle">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasInterfaceName">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasJoinDate">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasMAC">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasOpticalTransmittedPower">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasPacketLoss">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasRespansivity">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceEndTime">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceStartTime">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceStatus">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasServiceType">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/hasUserID">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/idleTimeout">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/isUP">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/priority">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ssid">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/tableId">
+	<rdfs:isDefinedBy rdf:resource="http://purl.org/toco/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/firstName">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/lastName">
+	<rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000008">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000017">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000028">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000035">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000058">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000060">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000092">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000094">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000111">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000114">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000223">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000224">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000231">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000232">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000233">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000235">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000325">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000331">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000332">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010005">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010008">
+	<rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+	<rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+	<rdfs:label>length unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+	<rdfs:label>time unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000008">
+	<rdfs:label>meter</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010">
+	<rdfs:label>second</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000016">
+	<rdfs:label>millimeter</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000017">
+	<rdfs:label>micrometer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000028">
+	<rdfs:label>millisecond</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000031">
+	<rdfs:label>minute</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
+	<rdfs:label>hour</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000034">
+	<rdfs:label>week</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000035">
+	<rdfs:label>month</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
+	<rdfs:label>year</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000058">
+	<rdfs:label>rotational frequency unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000105">
+	<rdfs:label>frequency unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000060">
+	<rdfs:label>speed/velocity unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000092">
+	<rdfs:label>turns per second</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000094">
+	<rdfs:label>meter per second</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000106">
+	<rdfs:label>hertz</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000111">
+	<rdfs:label>energy unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000113">
+	<rdfs:label>power unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000114">
+	<rdfs:label>watt</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000223">
+	<rdfs:label>watt-hour</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000224">
+	<rdfs:label>kilowatt-hour</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000231">
+	<rdfs:label>information unit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000232">
+	<rdfs:label>bit</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000233">
+	<rdfs:label>byte</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000235">
+	<rdfs:label>megabyte</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000325">
+	<rdfs:label>megaHertz</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000331">
+	<rdfs:label>gigabyte</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000332">
+	<rdfs:label>terabyte</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010005">
+	<rdfs:label>millimeters per day</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010008">
+	<rdfs:label>kilometer per hour</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+	<rdfs:label>location</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonShape">
+	<sh:property rdf:resource="http://purl.org/toco/29c3a5d12df8ba4f3bb0b250a29218a8"/>
+	<sh:property rdf:resource="http://purl.org/toco/fabc187d844000bd2477a93073025e1e"/>
+	<sh:property rdf:resource="http://purl.org/toco/febd2c1781966d53f8c50918bc225cbf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurementShape">
+	<sh:property rdf:resource="http://purl.org/toco/65cbccc55568429724b8f478534e412a"/>
+	<sh:property rdf:resource="http://purl.org/toco/9e0d8e3d4b0460f3f9c90c20137433c0"/>
+	<sh:property rdf:resource="http://purl.org/toco/ac379363f4990122b348621ac3fc78e5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AccessPointShape">
+	<sh:property rdf:resource="http://purl.org/toco/1df1141de9564499f785fe87620ebf07"/>
+	<sh:property rdf:resource="http://purl.org/toco/2dca135c5137baffb632aeffb67e0aff"/>
+	<sh:property rdf:resource="http://purl.org/toco/819b268e505afa45f7fa5d57741e12f5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ActionShape">
+	<sh:property rdf:resource="http://purl.org/toco/cceafcc7400d92b6de551a8ee1f9dd64"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/DeviceShape">
+	<sh:property rdf:resource="http://purl.org/toco/89e1de3b32259c63d7855b3e64b55e47"/>
+	<sh:property rdf:resource="http://purl.org/toco/a2eb7a815b0dd4ccf6ad95e314588e8d"/>
+	<sh:property rdf:resource="http://purl.org/toco/b51a01fa2118fcb0e4c76b4f7bba3c5f"/>
+	<sh:property rdf:resource="http://purl.org/toco/c0b4b5fddcf9dab6ce39ca9f8b244561"/>
+	<sh:property rdf:resource="http://purl.org/toco/d26bcbfbb4a6c9529cb7143a2a3a82c3"/>
+	<sh:property rdf:resource="http://purl.org/toco/d96a764fd921b7caf28560a60056db67"/>
+	<sh:property rdf:resource="http://purl.org/toco/fb08bfdfcd440bbfd6bf907104e07b06"/>
+	<sh:property rdf:resource="http://purl.org/toco/fb8ef5195f781a528fe6763201315317"/>
+	<sh:property rdf:resource="http://purl.org/toco/ffa627c90b2f93431bad38fc95750b9e"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/FlowShape">
+	<sh:property rdf:resource="http://purl.org/toco/078d7813aec84f0fdf3cab67a9691b34"/>
+	<sh:property rdf:resource="http://purl.org/toco/2b027421a5f804bd1942166984e1baaf"/>
+	<sh:property rdf:resource="http://purl.org/toco/3ffcbe8160a0606e214f0fea00b5ff68"/>
+	<sh:property rdf:resource="http://purl.org/toco/413b2156a35f5f3219e21351bb4af0c7"/>
+	<sh:property rdf:resource="http://purl.org/toco/706ca3ea48325921443ca48250a2f074"/>
+	<sh:property rdf:resource="http://purl.org/toco/9890d14c6da292dc4d3ca587ec15ef64"/>
+	<sh:property rdf:resource="http://purl.org/toco/a8a2b067b776a7cbe9336c9ee39b4950"/>
+	<sh:property rdf:resource="http://purl.org/toco/b8b180b88104c97386fc7f12fa5d0a3f"/>
+	<sh:property rdf:resource="http://purl.org/toco/c1ca3d1917404609ae0658b95e4e0d17"/>
+	<sh:property rdf:resource="http://purl.org/toco/ca3b4b51b2f168a8af3a6ffdb044bffe"/>
+	<sh:property rdf:resource="http://purl.org/toco/cb980022323d3e76623ea74c378254f7"/>
+	<sh:property rdf:resource="http://purl.org/toco/f09e8facb50f979b42d1efaded5a5c99"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/InterfaceShape">
+	<sh:property rdf:resource="http://purl.org/toco/2a332d0a84e4575d57e8bb7acc5be324"/>
+	<sh:property rdf:resource="http://purl.org/toco/3867995aa8f5011281dbd95c4e03f4f6"/>
+	<sh:property rdf:resource="http://purl.org/toco/391a1239a5a1d64cb249419ab0a10845"/>
+	<sh:property rdf:resource="http://purl.org/toco/395f523ac3d4c3295d3d6866e830def5"/>
+	<sh:property rdf:resource="http://purl.org/toco/5f50c16c5c1d1a69d8914cd97d246f56"/>
+	<sh:property rdf:resource="http://purl.org/toco/8db207f583dc54d01c86dbcacff5dc5c"/>
+	<sh:property rdf:resource="http://purl.org/toco/901bb6c4c8223df17ef856b4d935617b"/>
+	<sh:property rdf:resource="http://purl.org/toco/9a88acea47a8ee9ba0a06d78773309cd"/>
+	<sh:property rdf:resource="http://purl.org/toco/a957b9e64cd426dd9574d786fc961ed2"/>
+	<sh:property rdf:resource="http://purl.org/toco/e7a695a984e2424e86ae6731b9fd77df"/>
+	<sh:property rdf:resource="http://purl.org/toco/eb266760b8aecfa0ede88d330a454f41"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAccessPointShape">
+	<sh:property rdf:resource="http://purl.org/toco/14503499a42ba325245cabee3444ded5"/>
+	<sh:property rdf:resource="http://purl.org/toco/18ea982d06040e5074c4aa678545a58c"/>
+	<sh:property rdf:resource="http://purl.org/toco/9a5752b96425fdc61bbdeaf8316667c2"/>
+	<sh:property rdf:resource="http://purl.org/toco/efc1ca34cbe4d31baf54830e77c7685e"/>
+	<sh:property rdf:resource="http://purl.org/toco/f536b7b0b5133d59fae13d45bed3985b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAssociationShape">
+	<sh:property rdf:resource="http://purl.org/toco/0a08b4aa5e58dc435d7a89335d216f8c"/>
+	<sh:property rdf:resource="http://purl.org/toco/0c20faef953f51f780c644e32bc9be0b"/>
+	<sh:property rdf:resource="http://purl.org/toco/b021342fda08aabc6be0853ff42ac343"/>
+	<sh:property rdf:resource="http://purl.org/toco/b2905c7bd89fc2cc3823031a49303684"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiUserEquipmentShape">
+	<sh:property rdf:resource="http://purl.org/toco/3aaa30b67741de1b37f08ccf11fd3a96"/>
+	<sh:property rdf:resource="http://purl.org/toco/458b75ce28bcf52c62de1c981e908a69"/>
+	<sh:property rdf:resource="http://purl.org/toco/75c22f4b75ba8f25f6d56cb473c5ebff"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiWLANShape">
+	<sh:property rdf:resource="http://purl.org/toco/d7f09c00a6184a5975d0da3e504b6e90"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LinkShape">
+	<sh:property rdf:resource="http://purl.org/toco/0a2570253fdd6224288a17813eba32b4"/>
+	<sh:property rdf:resource="http://purl.org/toco/10d303e3fce6f76906ca039339304fa0"/>
+	<sh:property rdf:resource="http://purl.org/toco/3a985f8258720c369853c600a70429f9"/>
+	<sh:property rdf:resource="http://purl.org/toco/44c5fa81dbd30f11df2854ffb80a3f2a"/>
+	<sh:property rdf:resource="http://purl.org/toco/4bc11a7988db4245c437cd15f6339b93"/>
+	<sh:property rdf:resource="http://purl.org/toco/6490e82ad7665342b6c71a9c6413eab8"/>
+	<sh:property rdf:resource="http://purl.org/toco/6fa54f9c8a38a5532d8a894ab817fb02"/>
+	<sh:property rdf:resource="http://purl.org/toco/b428404e10d27006337fd8a57eeb28fa"/>
+	<sh:property rdf:resource="http://purl.org/toco/ea608526a3df17370c3556e33eb56ce8"/>
+	<sh:property rdf:resource="http://purl.org/toco/f9e63646bb01b78b08e7e78f43b86740"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ServiceShape">
+	<sh:property rdf:resource="http://purl.org/toco/0217d7d29b73cee3b2a7b24a47e3c6c9"/>
+	<sh:property rdf:resource="http://purl.org/toco/05a4e8c5945ff1997e6eb07d7c078fe9"/>
+	<sh:property rdf:resource="http://purl.org/toco/a51e785a1cb599a7e206fb1e9da6e977"/>
+	<sh:property rdf:resource="http://purl.org/toco/ca424b7dc9b54265e287511f70553481"/>
+	<sh:property rdf:resource="http://purl.org/toco/dd3f3de6a4c80178c4f8fe3a2c35340b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SystemDeviceShape">
+	<sh:property rdf:resource="http://purl.org/toco/b120c38a28a58f02127c339af8fea9bf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDeviceShape">
+	<sh:property rdf:resource="http://purl.org/toco/289ed8437f6a1c3f499caf2ac4541a74"/>
+	<sh:property rdf:resource="http://purl.org/toco/a4bdf0911a03a1da9a41ded230b5daa2"/>
+	<sh:property rdf:resource="http://purl.org/toco/c0aaa5fca6f5d55b52954c2cdca22cde"/>
+	<sh:property rdf:resource="http://purl.org/toco/c96fb1ae21777308cfd49627090dff48"/>
+	<sh:property rdf:resource="http://purl.org/toco/dc7dc17556a159a2911e87b2cd8198b4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserShape">
+	<sh:property rdf:resource="http://purl.org/toco/47bb12813b109ff5a0676ab375f44ca0"/>
+	<sh:property rdf:resource="http://purl.org/toco/54ed1c77e50ad5228aed01f468b473fe"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WLANShape">
+	<sh:property rdf:resource="http://purl.org/toco/13effce3a9d47ab82141a194e937e6a4"/>
+	<sh:property rdf:resource="http://purl.org/toco/bf9d56515dc8d1e44389640afd3d459c"/>
+	<sh:property rdf:resource="http://purl.org/toco/dc9ce47fbb78dcb4ebfad93f008decd1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiWLANShape">
+	<sh:property rdf:resource="http://purl.org/toco/23a19e69bc0a363e92e49aba18b4c63f"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WirelessAssociationShape">
+	<sh:property rdf:resource="http://purl.org/toco/8a0548a1338f8d8ced0e81b641611db7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThingShape">
+	<sh:property rdf:resource="http://purl.org/toco/172382a059e61f60b739a6e8d904fff3"/>
+	<sh:property rdf:resource="http://purl.org/toco/4496ce8f544702a6870f7a7ccf5f3a38"/>
+	<sh:property rdf:resource="http://purl.org/toco/e7990c6dd6a3dca6de078b32328bc4ef"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/PersonShape">
+	<sh:targetClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurementShape">
+	<sh:targetClass rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/AccessPointShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/AccessPoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ActionShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/Action"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/DeviceShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/Device"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/FlowShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/Flow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/InterfaceShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/Interface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAccessPointShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/LiFiAccessPoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiAssociationShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/LiFiAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiUserEquipmentShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/LiFiUserEquipment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LiFiWLANShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/LiFiWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/LinkShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/Link"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ServiceShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/Service"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/SystemDeviceShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/SystemDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserDeviceShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/UserDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/UserShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/User"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WLANShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/WLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WiFiWLANShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/WiFiWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/WirelessAssociationShape">
+	<sh:targetClass rdf:resource="http://purl.org/toco/WirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThingShape">
+	<sh:targetClass rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ac379363f4990122b348621ac3fc78e5">
+	<sh:class rdf:resource="http://purl.obolibrary.org/obo/uo.owl/unit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0a2570253fdd6224288a17813eba32b4">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/23a19e69bc0a363e92e49aba18b4c63f">
+	<sh:class rdf:resource="http://purl.org/toco/WiFiAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/289ed8437f6a1c3f499caf2ac4541a74">
+	<sh:class rdf:resource="http://purl.org/toco/Service"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2dca135c5137baffb632aeffb67e0aff">
+	<sh:class rdf:resource="http://purl.org/toco/UserEquipment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3a985f8258720c369853c600a70429f9">
+	<sh:class rdf:resource="http://purl.org/toco/Interface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/413b2156a35f5f3219e21351bb4af0c7">
+	<sh:class rdf:resource="http://purl.org/toco/Action"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/47bb12813b109ff5a0676ab375f44ca0">
+	<sh:class rdf:resource="http://purl.org/toco/UserDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/4bc11a7988db4245c437cd15f6339b93">
+	<sh:class rdf:resource="http://purl.org/toco/Interface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/6490e82ad7665342b6c71a9c6413eab8">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/6fa54f9c8a38a5532d8a894ab817fb02">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/819b268e505afa45f7fa5d57741e12f5">
+	<sh:class rdf:resource="http://purl.org/toco/UserDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/89e1de3b32259c63d7855b3e64b55e47">
+	<sh:class rdf:resource="http://purl.org/toco/SatelliteAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/8db207f583dc54d01c86dbcacff5dc5c">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/901bb6c4c8223df17ef856b4d935617b">
+	<sh:class rdf:resource="http://purl.org/toco/WiredLink"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9a88acea47a8ee9ba0a06d78773309cd">
+	<sh:class rdf:resource="http://purl.org/toco/Link"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a2eb7a815b0dd4ccf6ad95e314588e8d">
+	<sh:class rdf:resource="http://purl.org/toco/Interface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b51a01fa2118fcb0e4c76b4f7bba3c5f">
+	<sh:class rdf:resource="http://purl.org/toco/WiFiWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c0b4b5fddcf9dab6ce39ca9f8b244561">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d26bcbfbb4a6c9529cb7143a2a3a82c3">
+	<sh:class rdf:resource="http://purl.org/toco/Interface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fb08bfdfcd440bbfd6bf907104e07b06">
+	<sh:class rdf:resource="http://purl.org/toco/WLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fb8ef5195f781a528fe6763201315317">
+	<sh:class rdf:resource="http://purl.org/toco/LiFiWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ffa627c90b2f93431bad38fc95750b9e">
+	<sh:class rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpartialThing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/e7a695a984e2424e86ae6731b9fd77df">
+	<sh:class rdf:resource="http://purl.org/toco/Device"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d7f09c00a6184a5975d0da3e504b6e90">
+	<sh:class rdf:resource="http://purl.org/toco/LiFiAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b428404e10d27006337fd8a57eeb28fa">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ea608526a3df17370c3556e33eb56ce8">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f9e63646bb01b78b08e7e78f43b86740">
+	<sh:class rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/ObervationAndMeasurement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b120c38a28a58f02127c339af8fea9bf">
+	<sh:class rdf:resource="http://purl.org/toco/Flow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c0aaa5fca6f5d55b52954c2cdca22cde">
+	<sh:class rdf:resource="http://purl.org/toco/User"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c96fb1ae21777308cfd49627090dff48">
+	<sh:class rdf:resource="http://purl.org/toco/AccessPoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dc7dc17556a159a2911e87b2cd8198b4">
+	<sh:class rdf:resource="http://purl.org/toco/UserDeviceStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/bf9d56515dc8d1e44389640afd3d459c">
+	<sh:class rdf:resource="http://purl.org/toco/WirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/65cbccc55568429724b8f478534e412a">
+	<sh:path rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9e0d8e3d4b0460f3f9c90c20137433c0">
+	<sh:path rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasValue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ac379363f4990122b348621ac3fc78e5">
+	<sh:path rdf:resource="http://purl.oclc.org/net/unis/ontology/sensordata.owl/hasUnits"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0217d7d29b73cee3b2a7b24a47e3c6c9">
+	<sh:path rdf:resource="http://purl.org/toco/hasServiceType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/05a4e8c5945ff1997e6eb07d7c078fe9">
+	<sh:path rdf:resource="http://purl.org/toco/hasServiceEndTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/078d7813aec84f0fdf3cab67a9691b34">
+	<sh:path rdf:resource="http://purl.org/toco/idleTimeout"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0a08b4aa5e58dc435d7a89335d216f8c">
+	<sh:path rdf:resource="http://purl.org/toco/hasRadianceAngle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0a2570253fdd6224288a17813eba32b4">
+	<sh:path rdf:resource="http://purl.org/toco/hasTxpower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0c20faef953f51f780c644e32bc9be0b">
+	<sh:path rdf:resource="http://purl.org/toco/hasDistance"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/10d303e3fce6f76906ca039339304fa0">
+	<sh:path rdf:resource="http://purl.org/toco/hasPacketLoss"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/13effce3a9d47ab82141a194e937e6a4">
+	<sh:path rdf:resource="http://purl.org/toco/hasAntennaHeight"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/14503499a42ba325245cabee3444ded5">
+	<sh:path rdf:resource="http://purl.org/toco/hasOpticalTransmittedPower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/172382a059e61f60b739a6e8d904fff3">
+	<sh:path rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/18ea982d06040e5074c4aa678545a58c">
+	<sh:path rdf:resource="http://purl.org/toco/hasHalfIntensityAngle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/1df1141de9564499f785fe87620ebf07">
+	<sh:path rdf:resource="http://purl.org/toco/driver"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/23a19e69bc0a363e92e49aba18b4c63f">
+	<sh:path rdf:resource="http://purl.org/toco/hasWiFiAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/289ed8437f6a1c3f499caf2ac4541a74">
+	<sh:path rdf:resource="http://purl.org/toco/hasService"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/29c3a5d12df8ba4f3bb0b250a29218a8">
+	<sh:path rdf:resource="http://xmlns.com/foaf/0.1/firstName"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2a332d0a84e4575d57e8bb7acc5be324">
+	<sh:path rdf:resource="http://purl.org/toco/hasIP"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2b027421a5f804bd1942166984e1baaf">
+	<sh:path rdf:resource="http://purl.org/toco/tableId"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2dca135c5137baffb632aeffb67e0aff">
+	<sh:path rdf:resource="http://purl.org/toco/stationsInRange"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3867995aa8f5011281dbd95c4e03f4f6">
+	<sh:path rdf:resource="http://purl.org/toco/hasMAC"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/391a1239a5a1d64cb249419ab0a10845">
+	<sh:path rdf:resource="http://purl.org/toco/isUP"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/395f523ac3d4c3295d3d6866e830def5">
+	<sh:path rdf:resource="http://purl.org/toco/hasInterfaceName"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3a985f8258720c369853c600a70429f9">
+	<sh:path rdf:resource="http://purl.org/toco/to"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3aaa30b67741de1b37f08ccf11fd3a96">
+	<sh:path rdf:resource="http://purl.org/toco/hasFieldOfView"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3ffcbe8160a0606e214f0fea00b5ff68">
+	<sh:path rdf:resource="http://purl.org/toco/nwTos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/413b2156a35f5f3219e21351bb4af0c7">
+	<sh:path rdf:resource="http://purl.org/toco/hasFlowAction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/4496ce8f544702a6870f7a7ccf5f3a38">
+	<sh:path rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/44c5fa81dbd30f11df2854ffb80a3f2a">
+	<sh:path rdf:resource="http://purl.org/toco/hasLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/458b75ce28bcf52c62de1c981e908a69">
+	<sh:path rdf:resource="http://purl.org/toco/hasGainOfConcentrator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/47bb12813b109ff5a0676ab375f44ca0">
+	<sh:path rdf:resource="http://purl.org/toco/hasDevice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/4bc11a7988db4245c437cd15f6339b93">
+	<sh:path rdf:resource="http://purl.org/toco/from"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/54ed1c77e50ad5228aed01f468b473fe">
+	<sh:path rdf:resource="http://purl.org/toco/hasUserID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/5f50c16c5c1d1a69d8914cd97d246f56">
+	<sh:path rdf:resource="http://purl.org/toco/frequency"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/6490e82ad7665342b6c71a9c6413eab8">
+	<sh:path rdf:resource="http://purl.org/toco/hasThroughPut"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/6fa54f9c8a38a5532d8a894ab817fb02">
+	<sh:path rdf:resource="http://purl.org/toco/hasDatarate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/706ca3ea48325921443ca48250a2f074">
+	<sh:path rdf:resource="http://purl.org/toco/cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/75c22f4b75ba8f25f6d56cb473c5ebff">
+	<sh:path rdf:resource="http://purl.org/toco/hasLiFiUserEquipmentProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/819b268e505afa45f7fa5d57741e12f5">
+	<sh:path rdf:resource="http://purl.org/toco/hasAssociatedStations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/89e1de3b32259c63d7855b3e64b55e47">
+	<sh:path rdf:resource="http://purl.org/toco/hasSatelliteAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/8a0548a1338f8d8ced0e81b641611db7">
+	<sh:path rdf:resource="http://purl.org/toco/hasWirelessLinkProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/8db207f583dc54d01c86dbcacff5dc5c">
+	<sh:path rdf:resource="http://purl.org/toco/hasTransmitPower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/901bb6c4c8223df17ef856b4d935617b">
+	<sh:path rdf:resource="http://purl.org/toco/hasWiredLink"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9890d14c6da292dc4d3ca587ec15ef64">
+	<sh:path rdf:resource="http://purl.org/toco/dlDst"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9a5752b96425fdc61bbdeaf8316667c2">
+	<sh:path rdf:resource="http://purl.org/toco/hasRespansivity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9a88acea47a8ee9ba0a06d78773309cd">
+	<sh:path rdf:resource="http://purl.org/toco/hasLink"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cceafcc7400d92b6de551a8ee1f9dd64">
+	<sh:path rdf:resource="http://purl.org/toco/toPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a2eb7a815b0dd4ccf6ad95e314588e8d">
+	<sh:path rdf:resource="http://purl.org/toco/hasPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b51a01fa2118fcb0e4c76b4f7bba3c5f">
+	<sh:path rdf:resource="http://purl.org/toco/hasWiFiWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c0b4b5fddcf9dab6ce39ca9f8b244561">
+	<sh:path rdf:resource="http://purl.org/toco/range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d26bcbfbb4a6c9529cb7143a2a3a82c3">
+	<sh:path rdf:resource="http://purl.org/toco/hasInterface"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d96a764fd921b7caf28560a60056db67">
+	<sh:path rdf:resource="http://purl.org/toco/ssid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fb08bfdfcd440bbfd6bf907104e07b06">
+	<sh:path rdf:resource="http://purl.org/toco/hasWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fb8ef5195f781a528fe6763201315317">
+	<sh:path rdf:resource="http://purl.org/toco/hasLiFiWLAN"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ffa627c90b2f93431bad38fc95750b9e">
+	<sh:path rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a8a2b067b776a7cbe9336c9ee39b4950">
+	<sh:path rdf:resource="http://purl.org/toco/nwProtocol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b8b180b88104c97386fc7f12fa5d0a3f">
+	<sh:path rdf:resource="http://purl.org/toco/priority"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c1ca3d1917404609ae0658b95e4e0d17">
+	<sh:path rdf:resource="http://purl.org/toco/flags"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ca3b4b51b2f168a8af3a6ffdb044bffe">
+	<sh:path rdf:resource="http://purl.org/toco/dlSrc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cb980022323d3e76623ea74c378254f7">
+	<sh:path rdf:resource="http://purl.org/toco/inPort"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f09e8facb50f979b42d1efaded5a5c99">
+	<sh:path rdf:resource="http://purl.org/toco/hardTimeout"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a957b9e64cd426dd9574d786fc961ed2">
+	<sh:path rdf:resource="http://purl.org/toco/mode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/e7a695a984e2424e86ae6731b9fd77df">
+	<sh:path rdf:resource="http://purl.org/toco/isIn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/eb266760b8aecfa0ede88d330a454f41">
+	<sh:path rdf:resource="http://purl.org/toco/channel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/efc1ca34cbe4d31baf54830e77c7685e">
+	<sh:path rdf:resource="http://purl.org/toco/hasLiFiAccessPointProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f536b7b0b5133d59fae13d45bed3985b">
+	<sh:path rdf:resource="http://purl.org/toco/hasGainofOpticalFilter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b021342fda08aabc6be0853ff42ac343">
+	<sh:path rdf:resource="http://purl.org/toco/hasIncidentAngle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b2905c7bd89fc2cc3823031a49303684">
+	<sh:path rdf:resource="http://purl.org/toco/hasLiFiAssociationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d7f09c00a6184a5975d0da3e504b6e90">
+	<sh:path rdf:resource="http://purl.org/toco/hasLiFiAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b428404e10d27006337fd8a57eeb28fa">
+	<sh:path rdf:resource="http://purl.org/toco/hasStandardDeviation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ea608526a3df17370c3556e33eb56ce8">
+	<sh:path rdf:resource="http://purl.org/toco/hasBandwidth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f9e63646bb01b78b08e7e78f43b86740">
+	<sh:path rdf:resource="http://purl.org/toco/hasRoundTripTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a51e785a1cb599a7e206fb1e9da6e977">
+	<sh:path rdf:resource="http://purl.org/toco/hasServiceStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ca424b7dc9b54265e287511f70553481">
+	<sh:path rdf:resource="http://purl.org/toco/hasErrorCode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dd3f3de6a4c80178c4f8fe3a2c35340b">
+	<sh:path rdf:resource="http://purl.org/toco/hasServiceStartTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b120c38a28a58f02127c339af8fea9bf">
+	<sh:path rdf:resource="http://purl.org/toco/hasFlow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a4bdf0911a03a1da9a41ded230b5daa2">
+	<sh:path rdf:resource="http://purl.org/toco/hasJoinDate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c0aaa5fca6f5d55b52954c2cdca22cde">
+	<sh:path rdf:resource="http://purl.org/toco/belongsTo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c96fb1ae21777308cfd49627090dff48">
+	<sh:path rdf:resource="http://purl.org/toco/apsInRange"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dc7dc17556a159a2911e87b2cd8198b4">
+	<sh:path rdf:resource="http://purl.org/toco/hasUserDeviceStatus"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/bf9d56515dc8d1e44389640afd3d459c">
+	<sh:path rdf:resource="http://purl.org/toco/hasWirelessAssociation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dc9ce47fbb78dcb4ebfad93f008decd1">
+	<sh:path rdf:resource="http://purl.org/toco/hasAntennaGain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/e7990c6dd6a3dca6de078b32328bc4ef">
+	<sh:path rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fabc187d844000bd2477a93073025e1e">
+	<sh:path rdf:resource="http://xmlns.com/foaf/0.1/lastName"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/febd2c1781966d53f8c50918bc225cbf">
+	<sh:path rdf:resource="http://xmlns.com/foaf/0.1/gender"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/65cbccc55568429724b8f478534e412a">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9e0d8e3d4b0460f3f9c90c20137433c0">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0217d7d29b73cee3b2a7b24a47e3c6c9">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/05a4e8c5945ff1997e6eb07d7c078fe9">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/078d7813aec84f0fdf3cab67a9691b34">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0a08b4aa5e58dc435d7a89335d216f8c">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/0c20faef953f51f780c644e32bc9be0b">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/10d303e3fce6f76906ca039339304fa0">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/13effce3a9d47ab82141a194e937e6a4">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/14503499a42ba325245cabee3444ded5">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/172382a059e61f60b739a6e8d904fff3">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/18ea982d06040e5074c4aa678545a58c">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/1df1141de9564499f785fe87620ebf07">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2a332d0a84e4575d57e8bb7acc5be324">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/2b027421a5f804bd1942166984e1baaf">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3867995aa8f5011281dbd95c4e03f4f6">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/391a1239a5a1d64cb249419ab0a10845">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/395f523ac3d4c3295d3d6866e830def5">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3aaa30b67741de1b37f08ccf11fd3a96">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/3ffcbe8160a0606e214f0fea00b5ff68">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/4496ce8f544702a6870f7a7ccf5f3a38">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/44c5fa81dbd30f11df2854ffb80a3f2a">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/458b75ce28bcf52c62de1c981e908a69">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/54ed1c77e50ad5228aed01f468b473fe">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/5f50c16c5c1d1a69d8914cd97d246f56">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/706ca3ea48325921443ca48250a2f074">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/75c22f4b75ba8f25f6d56cb473c5ebff">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/8a0548a1338f8d8ced0e81b641611db7">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9890d14c6da292dc4d3ca587ec15ef64">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/9a5752b96425fdc61bbdeaf8316667c2">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cceafcc7400d92b6de551a8ee1f9dd64">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/d96a764fd921b7caf28560a60056db67">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a8a2b067b776a7cbe9336c9ee39b4950">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b8b180b88104c97386fc7f12fa5d0a3f">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/c1ca3d1917404609ae0658b95e4e0d17">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ca3b4b51b2f168a8af3a6ffdb044bffe">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/cb980022323d3e76623ea74c378254f7">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f09e8facb50f979b42d1efaded5a5c99">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a957b9e64cd426dd9574d786fc961ed2">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/eb266760b8aecfa0ede88d330a454f41">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/efc1ca34cbe4d31baf54830e77c7685e">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/f536b7b0b5133d59fae13d45bed3985b">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b021342fda08aabc6be0853ff42ac343">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/b2905c7bd89fc2cc3823031a49303684">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a51e785a1cb599a7e206fb1e9da6e977">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/ca424b7dc9b54265e287511f70553481">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dd3f3de6a4c80178c4f8fe3a2c35340b">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/a4bdf0911a03a1da9a41ded230b5daa2">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/dc9ce47fbb78dcb4ebfad93f008decd1">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/e7990c6dd6a3dca6de078b32328bc4ef">
+	<sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/29c3a5d12df8ba4f3bb0b250a29218a8">
+	<sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/fabc187d844000bd2477a93073025e1e">
+	<sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/toco/febd2c1781966d53f8c50918bc225cbf">
+	<sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+</rdf:Description>
+
+</rdf:RDF>

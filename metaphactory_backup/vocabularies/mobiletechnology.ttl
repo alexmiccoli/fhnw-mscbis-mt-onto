@@ -1,0 +1,43 @@
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <https://www.w3.org/TR/vocab-org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocabularies.metaphacts.com/mobiletechnology> a skos:ConceptScheme;
+  <http://purl.org/dc/terms/title> "Mobile Technology Vocabulary";
+  rdfs:label "MobileTechnology";
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> <http://vocabularies.metaphacts.com/mobiletechnology/>;
+  skos:prefLabel "MobileTechnology";
+  skos:hasTopConcept <http://vocabularies.metaphacts.com/mobiletechnology/43b91129-c4e7-4d36-9c63-1a6a923ee8be> .
+
+<http://vocabularies.metaphacts.com/mobiletechnology/539ad656-caeb-49cf-ad62-70d6cb28456d>
+  a skos:Concept;
+  skos:prefLabel "3g";
+  skos:altLabel "umts", "hsdpa";
+  skos:inScheme <http://vocabularies.metaphacts.com/mobiletechnology>;
+  skos:broader <http://vocabularies.metaphacts.com/mobiletechnology/43b91129-c4e7-4d36-9c63-1a6a923ee8be> .
+
+<http://vocabularies.metaphacts.com/mobiletechnology/da8a76dd-1fb0-4355-a6b7-9de3a459dc98>
+  a skos:Concept;
+  skos:prefLabel "4g";
+  skos:altLabel "lte";
+  skos:inScheme <http://vocabularies.metaphacts.com/mobiletechnology>;
+  skos:broader <http://vocabularies.metaphacts.com/mobiletechnology/43b91129-c4e7-4d36-9c63-1a6a923ee8be> .
+
+<http://vocabularies.metaphacts.com/mobiletechnology/e703fdc9-cfb8-4f0b-bb19-f1ba2c9ac707>
+  a skos:Concept;
+  skos:prefLabel "2g";
+  skos:inScheme <http://vocabularies.metaphacts.com/mobiletechnology>;
+  skos:broader <http://vocabularies.metaphacts.com/mobiletechnology/43b91129-c4e7-4d36-9c63-1a6a923ee8be> .
+
+<http://vocabularies.metaphacts.com/mobiletechnology/43b91129-c4e7-4d36-9c63-1a6a923ee8be>
+  a skos:Concept;
+  skos:prefLabel "Network Generation";
+  skos:inScheme <http://vocabularies.metaphacts.com/mobiletechnology> .
