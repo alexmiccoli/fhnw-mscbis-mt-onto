@@ -39,12 +39,12 @@ Dr. Emanuele Laurenzi
 - `ontologies` : the ontology repository from Metaphactory
 - `scripts` : PHP files for data manipulations and SPARQL preparation
 
-Please note that the files in `/metaphactory_backup` are not meant to be read outside Metaphactory but as a backup to be re-imported in Metaphactory if needed.
-Do not edit files in the `/ontologies` folder of the Master branch directly. Instead create a new branch, then test if everything works in Metaphactory and then merge the branch to Master.
+Please note that the files in `metaphactory_backup` are not meant to be read outside Metaphactory but as a backup to be re-imported in Metaphactory if needed.
+Do not edit files in the `ontologies` folder of the Master branch directly. Instead, create a new branch, then test if everything works in Metaphactory and then merge the branch to Master.
 
 ## Running PHP Scripts
 
-To run the PHP scripts, you first need to import the data from `data/db.sql` as a MySQL database. Then, copy scripts/config.tpl.php to `scripts/config.php` and enter the needed information. Then, navigate to the needed script from your browser. Note: The contents of `scripts/` must be placed in a location accessible for your PHP engine.
+To run the PHP scripts, you first need to import the data from `data/db.sql` as a MySQL database. Then, copy scripts/config.tpl.php to `scripts/config.php` and enter the needed information. Then, navigate to the needed script from your browser. Note: The contents of `scripts` must be placed in a location accessible for your PHP engine.
 
 ## Contact
 
