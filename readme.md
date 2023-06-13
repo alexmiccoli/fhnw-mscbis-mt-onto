@@ -1,7 +1,9 @@
 
 # Master's Thesis Data Repository
 
-Welcome to my Master's thesis data repository! This repository contains data and accompanying resources for my Master's thesis.
+**Welcome to my Master's thesis data repository!**
+
+This repository contains data and accompanying resources for my Master's thesis.
 
 ## Contents by Folder
 
