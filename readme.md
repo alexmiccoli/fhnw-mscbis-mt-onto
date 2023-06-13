@@ -7,10 +7,10 @@ Welcome to my Master's thesis data repository! This repository contains data and
 
 
 - `data`  : the raw and processed data used for the prototype
-  -- `preprocessed` : converted spatial data to flat structures
-  -- `sources` : raw data
-  --- `Canton Lucerne` : source data from opendata.swisscom
-  --- `Swisscom` : source data from the Swisscom Open Data platform
+- `data/preprocessed` : converted spatial data to flat structures
+- `data/sources` : raw data
+- `data/Canton Lucerne` : source data from opendata.swisscom
+- `data/Swisscom` : source data from the Swisscom Open Data platform
 - `diagrams` : source files for graphics presented in the report
 - `metaphactory_backup/*` : exports from Metaphactory to be re-imported if needed
 - `ontologies` : the ontology repository from Metaphactory
