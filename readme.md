@@ -25,4 +25,4 @@ To run the PHP scripts, you first need to import the data from `data/db.sql` as 
 
 ## Contact
 
-[alexandre.miccoli@students.fhnw.ch](mailto:alexandre.miccoli@students.fhnw.ch) or via my GitHub Profile
+Reach out to me by e-mail at [alexandre.miccoli@students.fhnw.ch](mailto:alexandre.miccoli@students.fhnw.ch), using the contact details on [my GitHub Profile Page](https://github.com/alexmiccoli) or via [LinkedIn](https://www.linkedin.com/in/alexmiccoli).
