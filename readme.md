@@ -32,7 +32,7 @@ Dr. Emanuele Laurenzi
 - `data`  : the raw and processed data used for the prototype
 - `data/preprocessed` : converted spatial data to flat structures
 - `data/sources` : raw data
-- `data/Canton Lucerne` : source data from opendata.swisscom
+- `data/Canton Lucerne` : source data from opendata.swiss
 - `data/Swisscom` : source data from the Swisscom Open Data platform
 - `diagrams` : source files for graphics presented in the report
 - `metaphactory_backup/*` : exports from Metaphactory to be re-imported if needed
