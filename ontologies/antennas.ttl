@@ -9,17 +9,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] a sh:NodeShape;
-  sh:property :0a4c25bb-ea9d-45c5-9040-299bee8fd695, :1a78eabb-7d3f-4990-a17e-f2647e5475c1,
-    :3e0e6f4e-2615-45e8-84c2-e890210c6981, :4d63aa8b-6443-4e54-9f3b-f3baf679f2fe, :50ea5fd5-81fb-4930-bd93-4fd0308bd702,
-    :6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa, :7b0b6595-b293-40c2-88dd-faca0382dc3e, :8570b5fc-1629-4881-8fbb-75aeda3c458a,
-    :87c3bf42-c8f8-4273-a976-b12f69e3b247, :9a7ff516-9cd9-4516-8972-98d451da9b26, :ad9dcdd1-db34-4563-9373-3953540a3902,
-    :f8362985-2a78-4367-8657-65d0f44993b6;
+  sh:property :0a4c25bb-ea9d-45c5-9040-299bee8fd695, :50ea5fd5-81fb-4930-bd93-4fd0308bd702,
+    :7b0b6595-b293-40c2-88dd-faca0382dc3e, :8570b5fc-1629-4881-8fbb-75aeda3c458a, :9a7ff516-9cd9-4516-8972-98d451da9b26,
+    :ad9dcdd1-db34-4563-9373-3953540a3902, :f8362985-2a78-4367-8657-65d0f44993b6;
   sh:targetClass :MobileAntenna .
 
 [] a sh:NodeShape;
   sh:property :39842fa6-87b0-496b-8ef4-4f43fc94124f, :53023700-985b-4af1-826b-2514220d75c2,
-    :763eba03-c2d1-4b4f-9769-2c17cf416124, :8a315438-3677-4c08-92a1-05f9cf52135e, :a8a13790-a5bd-4147-8b45-559f132fbf1d,
-    :aaa6fa31-9fe9-4aee-823e-3f8573fc219b, :aeb67154-4d1f-417d-8cdb-58d29aaf8d54, :ef68eedf-090d-4f68-b449-6076da628789;
+    :8a315438-3677-4c08-92a1-05f9cf52135e, :aaa6fa31-9fe9-4aee-823e-3f8573fc219b, :aeb67154-4d1f-417d-8cdb-58d29aaf8d54,
+    :ef68eedf-090d-4f68-b449-6076da628789;
   sh:targetClass :Point .
 
 <http://ontologies.metaphacts.com/antennas> a owl:Ontology;
@@ -33,23 +31,11 @@
   sh:minCount 1;
   sh:path :technology .
 
-:1a78eabb-7d3f-4990-a17e-f2647e5475c1 a sh:PropertyShape;
-  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
-  sh:path :powercodeParamProvidedByOrg .
-
 :39842fa6-87b0-496b-8ef4-4f43fc94124f a sh:PropertyShape;
   sh:datatype xsd:double;
   sh:maxCount 1;
   sh:minCount 1;
   sh:path :longitude .
-
-:3e0e6f4e-2615-45e8-84c2-e890210c6981 a sh:PropertyShape;
-  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
-  sh:path :identifierParamProvidedByOrg .
-
-:4d63aa8b-6443-4e54-9f3b-f3baf679f2fe a sh:PropertyShape;
-  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
-  sh:path :cellTypeParamProvidedByOrg .
 
 :50ea5fd5-81fb-4930-bd93-4fd0308bd702 a sh:PropertyShape;
   sh:datatype xsd:string;
@@ -60,14 +46,6 @@
   sh:class <http://ikm-group.ch/archiMEO/top/Building>;
   sh:maxCount 1;
   sh:path :pointIsOnBuilding .
-
-:6d8b32a8-cf41-45a4-9dc2-2bb7630d79fa a sh:PropertyShape;
-  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
-  sh:path :isAdaptiveParamProvidedByOrg .
-
-:763eba03-c2d1-4b4f-9769-2c17cf416124 a sh:PropertyShape;
-  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
-  sh:path :locationParamProvidedByOrg .
 
 :7b0b6595-b293-40c2-88dd-faca0382dc3e a sh:PropertyShape;
   sh:class <http://www.w3.org/ns/org#FormalOrganization>;
@@ -80,10 +58,6 @@
   sh:maxCount 1;
   sh:minCount 1;
   sh:path :antennaHasCoordinates .
-
-:87c3bf42-c8f8-4273-a976-b12f69e3b247 a sh:PropertyShape;
-  sh:class <http://www.w3.org/ns/org#FormalOrganization>;
-  sh:path :technologyParamProvidedByOrg .
 
 :8a315438-3677-4c08-92a1-05f9cf52135e a sh:PropertyShape;
   sh:class <http://ikm-group.ch/archiMEO/top#Street>;
@@ -106,12 +80,6 @@
   rdfs:comment "A geographic point refers to a specific location on the Earth's surface, defined by its latitude and longitude coordinates."@en;
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
   rdfs:label "Point" .
-
-:a8a13790-a5bd-4147-8b45-559f132fbf1d a sh:PropertyShape;
-  sh:datatype xsd:string;
-  sh:maxCount 1;
-  sh:minCount 0;
-  sh:path :source .
 
 :aaa6fa31-9fe9-4aee-823e-3f8573fc219b a sh:PropertyShape;
   sh:datatype xsd:double;
@@ -153,10 +121,6 @@
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
   rdfs:label "Cell Type" .
 
-:cellTypeParamProvidedByOrg a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "CellTypeParamProvidedByOrg" .
-
 :coordinateSystem a owl:DatatypeProperty;
   rdfs:comment "A coordinate system is a reference framework that defines how geographic points are represented on a map or the Earth's surface. The most commonly used coordinate system is the geographic coordinate system, which uses latitude and longitude as coordinates to identify specific locations worldwide. It enables accurate positioning and navigation on the Earth."@en;
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
@@ -172,22 +136,10 @@
   sh:maxCount 1;
   sh:path :adaptive .
 
-:identifierParamProvidedByOrg a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "IdentifierParamProvidedByOrg" .
-
-:isAdaptiveParamProvidedByOrg a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "isAdaptiveParamProvidedByOrg" .
-
 :latitude a owl:DatatypeProperty;
   rdfs:comment "Latitude is a geographic attribute that denotes the north-south position of a point on the Earth's surface, measured in degrees, ranging from -90° (south) to +90° (north). It is also an essential component of the coordinate system used to determine precise locations on the Earth."@en;
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
   rdfs:label "Latitude" .
-
-:locationParamProvidedByOrg a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "LocationParamProvidedByOrg" .
 
 :longitude a owl:DatatypeProperty;
   rdfs:comment "Longitude is a geographic attribute that specifies the east-west position of a point on the Earth's surface, measured in degrees, ranging from -180° (west) to +180° (east). It is part of the coordinate system used to determine precise locations on the Earth."@en;
@@ -211,19 +163,7 @@
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
   rdfs:label "Powercode" .
 
-:powercodeParamProvidedByOrg a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "PowercodeParamProvidedByOrg" .
-
-:source a owl:DatatypeProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "Source" .
-
 :technology a owl:DatatypeProperty;
   rdfs:comment "This attribute defines the mobile communication technology the antenna is used for."@en;
   rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
   rdfs:label "Technology" .
-
-:technologyParamProvidedByOrg a owl:ObjectProperty;
-  rdfs:isDefinedBy <http://ontologies.metaphacts.com/antennas>;
-  rdfs:label "TechnologyParamProvidedByOrg" .
